@@ -1,0 +1,54 @@
+relationship 5b581548-2006-5357-bb48-a7da617dbfb7
+	fromColumn: 'RTT'.'month'
+	toColumn: 'Date'.'month'
+	crossFilteringBehavior: oneDirection
+
+relationship fecab45b-6a62-5c57-88e4-d9e19aecb51b
+	fromColumn: 'RTT'.'provider_code'
+	toColumn: 'Provider'.'provider_code'
+	crossFilteringBehavior: oneDirection
+
+relationship 690bb8a7-42f9-5196-b463-d20bf3727395
+	fromColumn: 'AE'.'month'
+	toColumn: 'Date'.'month'
+	crossFilteringBehavior: oneDirection
+
+relationship 2c3920e6-dd2f-57a9-ba67-9966cd6b5fef
+	fromColumn: 'AE'.'provider_code'
+	toColumn: 'Provider'.'provider_code'
+	crossFilteringBehavior: oneDirection
+
+relationship 3ab95d5d-3a6f-5195-aa80-606322211472
+	fromColumn: 'Diagnostics'.'month'
+	toColumn: 'Date'.'month'
+	crossFilteringBehavior: oneDirection
+
+relationship a1a09e84-2675-58ed-bf10-cc7212a29736
+	fromColumn: 'Diagnostics'.'provider_code'
+	toColumn: 'Provider'.'provider_code'
+	crossFilteringBehavior: oneDirection
+
+relationship a5fa4be0-971a-51a3-9914-4a490df6ab82
+	fromColumn: 'RTT'.'specialty_code'
+	toColumn: 'Specialty'.'specialty_code'
+	crossFilteringBehavior: oneDirection
+
+relationship f675b46e-6628-5073-8a2e-6ed9cd1d8933
+	fromColumn: 'RTT'.'parent_code'
+	toColumn: 'Parent'.'parent_code'
+	crossFilteringBehavior: oneDirection
+
+relationship 37046856-02df-5a0f-b637-9dda35dd9a15
+	fromColumn: 'Diagnostics'.'test_code'
+	toColumn: 'Service'.'test_code'
+	crossFilteringBehavior: oneDirection
+
+relationship a076876a-aea2-5ef3-b643-94d4762ed141
+	fromColumn: 'Diagnostics'.'parent_code'
+	toColumn: 'Parent'.'parent_code'
+	crossFilteringBehavior: oneDirection
+
+relationship c16d369f-8c90-5ab2-8ca7-fb388988971f
+	fromColumn: 'AE'.'region_name'
+	toColumn: 'Region'.'region_name'
+	crossFilteringBehavior: oneDirection

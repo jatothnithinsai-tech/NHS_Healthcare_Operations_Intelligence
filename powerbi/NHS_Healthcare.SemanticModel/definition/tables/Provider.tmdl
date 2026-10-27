@@ -1,0 +1,22 @@
+table 'Provider'
+	lineageTag: 846852b3-6f53-5a3e-8119-d1b6169de048
+
+	column 'provider_code'
+		dataType: string
+		sourceColumn: provider_code
+		summarizeBy: none
+
+	column 'provider_name'
+		dataType: string
+		sourceColumn: provider_name
+		summarizeBy: none
+
+	partition 'Provider' = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataRoot & "/Provider.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				Typed = Table.TransformColumnTypes(Headers, {{"provider_code", type text}, {"provider_name", type text}}, "en-GB")
+			in
+				Typed

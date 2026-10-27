@@ -1,0 +1,13 @@
+﻿{
+    "state":  "Ready",
+    "refreshScriptVerifiedSeparately":  true,
+    "windowsTimeZone":  "GMT Standard Time",
+    "firstScheduledExecutionVerified":  false,
+    "schedule":  "Thursday 14:30 in Windows local time; interactive signed-in user",
+    "registered":  true,
+    "taskName":  "NHS Healthcare Operations - Official Publication Check",
+    "nextRunTime":  "2026-10-29T14:30:00.0000000+00:00",
+    "arguments":  "-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File \"C:\\Users\\yogee\\OneDrive\\Desktop\\NHS_Healthcare_Operations_Intelligence\\scripts\\refresh.ps1\"",
+    "action":  "powershell.exe",
+    "lastTaskResult":  267011
+}

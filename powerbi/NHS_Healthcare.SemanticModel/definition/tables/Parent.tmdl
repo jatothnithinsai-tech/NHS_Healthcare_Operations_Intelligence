@@ -1,0 +1,22 @@
+table 'Parent'
+	lineageTag: e10b8ee1-fa26-5584-9b77-ee2e6687ba78
+
+	column 'parent_code'
+		dataType: string
+		sourceColumn: parent_code
+		summarizeBy: none
+
+	column 'parent_name'
+		dataType: string
+		sourceColumn: parent_name
+		summarizeBy: none
+
+	partition 'Parent' = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataRoot & "/Parent.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				Typed = Table.TransformColumnTypes(Headers, {{"parent_code", type text}, {"parent_name", type text}}, "en-GB")
+			in
+				Typed

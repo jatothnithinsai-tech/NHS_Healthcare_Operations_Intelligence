@@ -1,0 +1,9 @@
+{
+  "history_months": 24,
+  "analysis_start": "2024-09-01",
+  "source_years": ["2026-27", "2025-26", "2024-25"],
+  "request_timeout_seconds": 120,
+  "download_workers": 4,
+  "parser_version": "1.0.2",
+  "publication_timezone": "Europe/London"
+}

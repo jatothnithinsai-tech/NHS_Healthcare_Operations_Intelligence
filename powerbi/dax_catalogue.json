@@ -1,0 +1,202 @@
+{
+  "RTT Pathways": {
+    "expression": "CALCULATE(IF(COUNT(RTT[waiting_count])=COUNTROWS(RTT),SUM(RTT[waiting_count])),RTT[pathway_type]=\"Part_2\")",
+    "format": "#,0"
+  },
+  "RTT Within18": {
+    "expression": "CALCULATE(IF(COUNT(RTT[within_18])=COUNTROWS(RTT),SUM(RTT[within_18])),RTT[pathway_type]=\"Part_2\")",
+    "format": "#,0"
+  },
+  "RTT Within18 Rate": {
+    "expression": "DIVIDE([RTT Within18],[RTT Pathways])",
+    "format": "0.0%"
+  },
+  "RTT Over18": {
+    "expression": "CALCULATE(IF(COUNT(RTT[over_18])=COUNTROWS(RTT),SUM(RTT[over_18])),RTT[pathway_type]=\"Part_2\")",
+    "format": "#,0"
+  },
+  "RTT Over52": {
+    "expression": "CALCULATE(IF(COUNT(RTT[over_52])=COUNTROWS(RTT),SUM(RTT[over_52])),RTT[pathway_type]=\"Part_2\")",
+    "format": "#,0"
+  },
+  "RTT Over65": {
+    "expression": "CALCULATE(IF(COUNT(RTT[over_65])=COUNTROWS(RTT),SUM(RTT[over_65])),RTT[pathway_type]=\"Part_2\")",
+    "format": "#,0"
+  },
+  "RTT Over78": {
+    "expression": "CALCULATE(IF(COUNT(RTT[over_78])=COUNTROWS(RTT),SUM(RTT[over_78])),RTT[pathway_type]=\"Part_2\")",
+    "format": "#,0"
+  },
+  "RTT Over104": {
+    "expression": "CALCULATE(IF(COUNT(RTT[over_104])=COUNTROWS(RTT),SUM(RTT[over_104])),RTT[pathway_type]=\"Part_2\")",
+    "format": "#,0"
+  },
+  "RTT Admitted Completed": {
+    "expression": "CALCULATE(SUM(RTT[total_all]),RTT[pathway_type]=\"Part_1A\")",
+    "format": "#,0"
+  },
+  "RTT Nonadmitted Completed": {
+    "expression": "CALCULATE(SUM(RTT[total_all]),RTT[pathway_type]=\"Part_1B\")",
+    "format": "#,0"
+  },
+  "AE Attendances": {
+    "expression": "IF(COUNT(AE[attendances])=COUNTROWS(AE),SUM(AE[attendances]))",
+    "format": "#,0"
+  },
+  "AE Within4 Rate": {
+    "expression": "DIVIDE(IF(COUNT(AE[within_4])=COUNTROWS(AE),SUM(AE[within_4])),[AE Attendances])",
+    "format": "0.0%"
+  },
+  "AE Type1 Within4 Rate": {
+    "expression": "DIVIDE(SUM(AE[type1_attendances])-SUM(AE[type1_over_4]),SUM(AE[type1_attendances]))",
+    "format": "0.0%"
+  },
+  "Emergency Admissions": {
+    "expression": "IF(COUNT(AE[emergency_admissions])=COUNTROWS(AE),SUM(AE[emergency_admissions]))",
+    "format": "#,0"
+  },
+  "DTA12 Plus": {
+    "expression": "IF(COUNT(AE[dta_12_plus])=COUNTROWS(AE),SUM(AE[dta_12_plus]))",
+    "format": "#,0"
+  },
+  "Diagnostic Waiting": {
+    "expression": "IF(COUNT(Diagnostics[waiting_count])=COUNTROWS(Diagnostics),SUM(Diagnostics[waiting_count]))",
+    "format": "#,0"
+  },
+  "Diagnostic Over6": {
+    "expression": "IF(COUNT(Diagnostics[over_6])=COUNTROWS(Diagnostics),SUM(Diagnostics[over_6]))",
+    "format": "#,0"
+  },
+  "Diagnostic SixWeek Rate": {
+    "expression": "DIVIDE([Diagnostic Over6],[Diagnostic Waiting])",
+    "format": "0.0%"
+  },
+  "Diagnostic Activity": {
+    "expression": "IF(COUNT(Diagnostics[total_activity])=COUNTROWS(Diagnostics),SUM(Diagnostics[total_activity]))",
+    "format": "#,0"
+  },
+  "RTT Latest Month": {
+    "expression": "MAX(RTT[month])",
+    "format": "MMM yyyy"
+  },
+  "AE Latest Month": {
+    "expression": "MAX(AE[month])",
+    "format": "MMM yyyy"
+  },
+  "Diagnostic Latest Month": {
+    "expression": "MAX(Diagnostics[month])",
+    "format": "MMM yyyy"
+  },
+  "RTT Previous Year": {
+    "expression": "CALCULATE([RTT Pathways],SAMEPERIODLASTYEAR('Date'[month]))",
+    "format": "#,0"
+  },
+  "RTT YoY Change": {
+    "expression": "IF(NOT ISBLANK([RTT Previous Year]),[RTT Pathways]-[RTT Previous Year])",
+    "format": "#,0"
+  },
+  "Providers Over1000 LongWaits": {
+    "expression": "COUNTROWS(FILTER(VALUES(Provider[provider_code]),[RTT Over52]>=1000))",
+    "format": "#,0"
+  },
+  "Source Files": {
+    "expression": "COUNTROWS(Sources)",
+    "format": "#,0"
+  },
+  "Publisher Revisions": {
+    "expression": "COUNTROWS(FILTER(Sources,Sources[publisher_revision_label]=TRUE()))",
+    "format": "#,0"
+  },
+  "Source Retrieval Age Days": {
+    "expression": "DATEDIFF(MAX(Sources[retrieved_at]),NOW(),DAY)",
+    "format": "#,0"
+  },
+  "Missing Domains": {
+    "expression": "3-DISTINCTCOUNT(Sources[dataset])",
+    "format": "#,0"
+  },
+  "Failed Quality Checks": {
+    "expression": "COUNTROWS(FILTER(Quality,Quality[status]<>\"PASS\"))",
+    "format": "#,0"
+  },
+  "Validation Status": {
+    "expression": "IF([Failed Quality Checks]=0,\"PASS\",\"FAIL\")",
+    "format": ""
+  },
+  "Unverified Publication Dates": {
+    "expression": "COUNTROWS(FILTER(Sources,ISBLANK(Sources[publication_date])))",
+    "format": "#,0"
+  },
+  "Latest Pipeline Status": {
+    "expression": "VAR t=TOPN(1,Pipeline,Pipeline[started_at],DESC) RETURN CONCATENATEX(t,Pipeline[status],\",\")",
+    "format": ""
+  },
+  "Latest Source Retrieval": {
+    "expression": "MAX(Sources[retrieved_at])",
+    "format": "dd MMM yyyy HH:mm"
+  },
+  "RTT Pathways Latest": {
+    "expression": "VAR latestMonth=MAX(RTT[month]) RETURN CALCULATE([RTT Pathways],KEEPFILTERS('Date'[month]=latestMonth))",
+    "format": "#,0"
+  },
+  "RTT Within18 Rate Latest": {
+    "expression": "VAR latestMonth=MAX(RTT[month]) RETURN CALCULATE([RTT Within18 Rate],KEEPFILTERS('Date'[month]=latestMonth))",
+    "format": "0.0%"
+  },
+  "RTT Over52 Latest": {
+    "expression": "VAR latestMonth=MAX(RTT[month]) RETURN CALCULATE([RTT Over52],KEEPFILTERS('Date'[month]=latestMonth))",
+    "format": "#,0"
+  },
+  "RTT Over65 Latest": {
+    "expression": "VAR latestMonth=MAX(RTT[month]) RETURN CALCULATE([RTT Over65],KEEPFILTERS('Date'[month]=latestMonth))",
+    "format": "#,0"
+  },
+  "RTT Over78 Latest": {
+    "expression": "VAR latestMonth=MAX(RTT[month]) RETURN CALCULATE([RTT Over78],KEEPFILTERS('Date'[month]=latestMonth))",
+    "format": "#,0"
+  },
+  "RTT Over104 Latest": {
+    "expression": "VAR latestMonth=MAX(RTT[month]) RETURN CALCULATE([RTT Over104],KEEPFILTERS('Date'[month]=latestMonth))",
+    "format": "#,0"
+  },
+  "AE Attendances Latest": {
+    "expression": "VAR latestMonth=MAX(AE[month]) RETURN CALCULATE([AE Attendances],KEEPFILTERS('Date'[month]=latestMonth))",
+    "format": "#,0"
+  },
+  "AE Within4 Rate Latest": {
+    "expression": "VAR latestMonth=MAX(AE[month]) RETURN CALCULATE([AE Within4 Rate],KEEPFILTERS('Date'[month]=latestMonth))",
+    "format": "0.0%"
+  },
+  "Emergency Admissions Latest": {
+    "expression": "VAR latestMonth=MAX(AE[month]) RETURN CALCULATE([Emergency Admissions],KEEPFILTERS('Date'[month]=latestMonth))",
+    "format": "#,0"
+  },
+  "DTA12 Plus Latest": {
+    "expression": "VAR latestMonth=MAX(AE[month]) RETURN CALCULATE([DTA12 Plus],KEEPFILTERS('Date'[month]=latestMonth))",
+    "format": "#,0"
+  },
+  "Diagnostic Waiting Latest": {
+    "expression": "VAR latestMonth=MAX(Diagnostics[month]) RETURN CALCULATE([Diagnostic Waiting],KEEPFILTERS('Date'[month]=latestMonth))",
+    "format": "#,0"
+  },
+  "Diagnostic Over6 Latest": {
+    "expression": "VAR latestMonth=MAX(Diagnostics[month]) RETURN CALCULATE([Diagnostic Over6],KEEPFILTERS('Date'[month]=latestMonth))",
+    "format": "#,0"
+  },
+  "Diagnostic SixWeek Rate Latest": {
+    "expression": "VAR latestMonth=MAX(Diagnostics[month]) RETURN CALCULATE([Diagnostic SixWeek Rate],KEEPFILTERS('Date'[month]=latestMonth))",
+    "format": "0.0%"
+  },
+  "Diagnostic Activity Latest": {
+    "expression": "VAR latestMonth=MAX(Diagnostics[month]) RETURN CALCULATE([Diagnostic Activity],KEEPFILTERS('Date'[month]=latestMonth))",
+    "format": "#,0"
+  },
+  "RTT MoM Latest": {
+    "expression": "VAR m=MAX(RTT[month]) VAR currentValue=CALCULATE([RTT Pathways],'Date'[month]=m) VAR previousValue=CALCULATE([RTT Pathways],REMOVEFILTERS('Date'),'Date'[month]=EDATE(m,-1)) RETURN IF(NOT ISBLANK(previousValue),currentValue-previousValue)",
+    "format": "#,0"
+  },
+  "AE MoM pp Latest": {
+    "expression": "VAR m=MAX(AE[month]) VAR currentValue=CALCULATE([AE Within4 Rate],'Date'[month]=m) VAR previousValue=CALCULATE([AE Within4 Rate],REMOVEFILTERS('Date'),'Date'[month]=EDATE(m,-1)) RETURN IF(NOT ISBLANK(previousValue),100*(currentValue-previousValue))",
+    "format": "0.00 \"pp\""
+  }
+}

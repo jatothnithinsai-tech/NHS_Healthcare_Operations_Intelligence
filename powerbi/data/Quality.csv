@@ -1,0 +1,7 @@
+check_name,status,months,row_count
+rtt_consecutive_months,PASS,24.0,
+rtt_audit_row_counts,PASS,,236171.0
+ae_consecutive_months,PASS,25.0,
+ae_audit_row_counts,PASS,,4918.0
+diagnostics_consecutive_months,PASS,24.0,
+diagnostics_audit_row_counts,PASS,,162750.0

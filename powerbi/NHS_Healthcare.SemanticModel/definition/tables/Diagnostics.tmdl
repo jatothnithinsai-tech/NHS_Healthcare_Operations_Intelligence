@@ -1,0 +1,77 @@
+table 'Diagnostics'
+	lineageTag: c101c414-b2d1-5535-8de8-f87bb5ae8da8
+
+	column 'month'
+		dataType: dateTime
+		sourceColumn: month
+		summarizeBy: none
+		formatString: yyyy-MM-dd
+
+	column 'provider_code'
+		dataType: string
+		sourceColumn: provider_code
+		summarizeBy: none
+		isHidden
+
+	column 'parent_code'
+		dataType: string
+		sourceColumn: parent_code
+		summarizeBy: none
+		isHidden
+
+	column 'test_code'
+		dataType: string
+		sourceColumn: test_code
+		summarizeBy: none
+		isHidden
+
+	column 'waiting_count'
+		dataType: int64
+		sourceColumn: waiting_count
+		summarizeBy: sum
+
+	column 'over_6'
+		dataType: int64
+		sourceColumn: over_6
+		summarizeBy: sum
+
+	column 'over_13'
+		dataType: int64
+		sourceColumn: over_13
+		summarizeBy: sum
+
+	column 'total_activity'
+		dataType: int64
+		sourceColumn: total_activity
+		summarizeBy: sum
+
+	column 'waiting_activity'
+		dataType: int64
+		sourceColumn: waiting_activity
+		summarizeBy: sum
+
+	column 'planned_activity'
+		dataType: int64
+		sourceColumn: planned_activity
+		summarizeBy: sum
+
+	column 'unscheduled_activity'
+		dataType: int64
+		sourceColumn: unscheduled_activity
+		summarizeBy: sum
+
+	column 'source_sha256'
+		dataType: string
+		sourceColumn: source_sha256
+		summarizeBy: none
+		isHidden
+
+	partition 'Diagnostics' = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataRoot & "/Diagnostics.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				Typed = Table.TransformColumnTypes(Headers, {{"month", type datetime}, {"provider_code", type text}, {"parent_code", type text}, {"test_code", type text}, {"waiting_count", Int64.Type}, {"over_6", Int64.Type}, {"over_13", Int64.Type}, {"total_activity", Int64.Type}, {"waiting_activity", Int64.Type}, {"planned_activity", Int64.Type}, {"unscheduled_activity", Int64.Type}, {"source_sha256", type text}}, "en-GB")
+			in
+				Typed

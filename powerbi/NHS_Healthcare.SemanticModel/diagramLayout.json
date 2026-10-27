@@ -1,0 +1,178 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 334.242245511607,
+            "y": 262.66408588165393
+          },
+          "nodeIndex": "AE",
+          "nodeLineageTag": "eaac638f-e1ac-5f19-8e99-fcdb62656f29",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 624.18648443981169,
+            "y": 505.26625433206857
+          },
+          "nodeIndex": "Date",
+          "nodeLineageTag": "f6b1f86b-f89d-5747-a21b-9ea49275170b",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 914.06279226105653,
+            "y": 616.80856908197006
+          },
+          "nodeIndex": "Diagnostics",
+          "nodeLineageTag": "c101c414-b2d1-5535-8de8-f87bb5ae8da8",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1203.9643656439414,
+            "y": 505.25192119951254
+          },
+          "nodeIndex": "Parent",
+          "nodeLineageTag": "e10b8ee1-fa26-5584-9b77-ee2e6687ba78",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1437.9643656439412,
+            "y": 371.40428454098503
+          },
+          "nodeIndex": "Pipeline",
+          "nodeLineageTag": "22871889-f056-5a39-a909-1b76ee88eeca",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 624.19840706119908,
+            "y": 323.82623578283028
+          },
+          "nodeIndex": "Provider",
+          "nodeLineageTag": "846852b3-6f53-5a3e-8119-d1b6169de048",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 50,
+            "y": 304.01358529232061
+          },
+          "nodeIndex": "Region",
+          "nodeLineageTag": "a3dc87a5-9d0a-5ede-b996-b24ff6eb9da4",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 914.12309665892724,
+            "y": 133.50769789309311
+          },
+          "nodeIndex": "RTT",
+          "nodeLineageTag": "68f52e57-d013-50f9-ab4a-57427d7836be",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 600.36782291055772,
+            "y": 759.02323679793471
+          },
+          "nodeIndex": "Service",
+          "nodeLineageTag": "21b2241c-0a0b-5c19-9b2a-3072bddea646",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1721.9643656439412,
+            "y": 335.40428454098503
+          },
+          "nodeIndex": "Sources",
+          "nodeLineageTag": "ec9fe511-446d-561c-8dbc-7147d17275c1",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1109.9010057920093,
+            "y": -50
+          },
+          "nodeIndex": "Specialty",
+          "nodeLineageTag": "8e180b58-7e97-5eed-8710-9431f6d38334",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1955.9643656439412,
+            "y": 395.40428454098503
+          },
+          "nodeIndex": "Quality",
+          "nodeLineageTag": "5695957a-9e36-5ca5-a547-07a32600ad13",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

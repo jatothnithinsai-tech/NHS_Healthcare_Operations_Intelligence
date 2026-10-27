@@ -1,0 +1,15 @@
+{
+  "publisher": "Microsoft",
+  "package": "Microsoft.AnalysisServices.retail.amd64",
+  "version": "19.84.1",
+  "framework": "net45",
+  "url": "https://api.nuget.org/v3-flatcontainer/microsoft.analysisservices.retail.amd64/19.84.1/microsoft.analysisservices.retail.amd64.19.84.1.nupkg",
+  "sha256": "2da37f7898c62140287ea1b25f24d74967fb4a12cfc818ff1113952b669ee425",
+  "installed_libraries": [
+    "Microsoft.AnalysisServices.Core.dll",
+    "Microsoft.AnalysisServices.dll",
+    "Microsoft.AnalysisServices.SPClient.Interfaces.dll",
+    "Microsoft.AnalysisServices.Tabular.dll",
+    "Microsoft.AnalysisServices.Tabular.Json.dll"
+  ]
+}

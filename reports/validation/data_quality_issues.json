@@ -1,0 +1,191 @@
+[
+  {
+    "dataset": "rtt",
+    "month": "2024-09-01",
+    "issue": "structural_blank_bands_proven_zero",
+    "cells": 1710213,
+    "handling": "Only blank cells whose nonnegative observed row counts already equal the official total are resolved to zero; explicit suppression tokens remain NULL."
+  },
+  {
+    "dataset": "rtt",
+    "month": "2024-10-01",
+    "issue": "structural_blank_bands_proven_zero",
+    "cells": 1730182,
+    "handling": "Only blank cells whose nonnegative observed row counts already equal the official total are resolved to zero; explicit suppression tokens remain NULL."
+  },
+  {
+    "dataset": "rtt",
+    "month": "2024-11-01",
+    "issue": "structural_blank_bands_proven_zero",
+    "cells": 1722514,
+    "handling": "Only blank cells whose nonnegative observed row counts already equal the official total are resolved to zero; explicit suppression tokens remain NULL."
+  },
+  {
+    "dataset": "rtt",
+    "month": "2024-12-01",
+    "issue": "structural_blank_bands_proven_zero",
+    "cells": 1796690,
+    "handling": "Only blank cells whose nonnegative observed row counts already equal the official total are resolved to zero; explicit suppression tokens remain NULL."
+  },
+  {
+    "dataset": "rtt",
+    "month": "2025-01-01",
+    "issue": "structural_blank_bands_proven_zero",
+    "cells": 1718434,
+    "handling": "Only blank cells whose nonnegative observed row counts already equal the official total are resolved to zero; explicit suppression tokens remain NULL."
+  },
+  {
+    "dataset": "rtt",
+    "month": "2025-02-01",
+    "issue": "structural_blank_bands_proven_zero",
+    "cells": 1683349,
+    "handling": "Only blank cells whose nonnegative observed row counts already equal the official total are resolved to zero; explicit suppression tokens remain NULL."
+  },
+  {
+    "dataset": "rtt",
+    "month": "2025-03-01",
+    "issue": "structural_blank_bands_proven_zero",
+    "cells": 1682537,
+    "handling": "Only blank cells whose nonnegative observed row counts already equal the official total are resolved to zero; explicit suppression tokens remain NULL."
+  },
+  {
+    "dataset": "rtt",
+    "month": "2025-04-01",
+    "issue": "structural_blank_bands_proven_zero",
+    "cells": 1675047,
+    "handling": "Only blank cells whose nonnegative observed row counts already equal the official total are resolved to zero; explicit suppression tokens remain NULL."
+  },
+  {
+    "dataset": "rtt",
+    "month": "2025-05-01",
+    "issue": "structural_blank_bands_proven_zero",
+    "cells": 1656366,
+    "handling": "Only blank cells whose nonnegative observed row counts already equal the official total are resolved to zero; explicit suppression tokens remain NULL."
+  },
+  {
+    "dataset": "rtt",
+    "month": "2025-06-01",
+    "issue": "structural_blank_bands_proven_zero",
+    "cells": 1680551,
+    "handling": "Only blank cells whose nonnegative observed row counts already equal the official total are resolved to zero; explicit suppression tokens remain NULL."
+  },
+  {
+    "dataset": "rtt",
+    "month": "2025-07-01",
+    "issue": "structural_blank_bands_proven_zero",
+    "cells": 1544634,
+    "handling": "Only blank cells whose nonnegative observed row counts already equal the official total are resolved to zero; explicit suppression tokens remain NULL."
+  },
+  {
+    "dataset": "rtt",
+    "month": "2025-08-01",
+    "issue": "structural_blank_bands_proven_zero",
+    "cells": 1514059,
+    "handling": "Only blank cells whose nonnegative observed row counts already equal the official total are resolved to zero; explicit suppression tokens remain NULL."
+  },
+  {
+    "dataset": "rtt",
+    "month": "2025-09-01",
+    "issue": "structural_blank_bands_proven_zero",
+    "cells": 1567419,
+    "handling": "Only blank cells whose nonnegative observed row counts already equal the official total are resolved to zero; explicit suppression tokens remain NULL."
+  },
+  {
+    "dataset": "rtt",
+    "month": "2025-10-01",
+    "issue": "structural_blank_bands_proven_zero",
+    "cells": 1571083,
+    "handling": "Only blank cells whose nonnegative observed row counts already equal the official total are resolved to zero; explicit suppression tokens remain NULL."
+  },
+  {
+    "dataset": "rtt",
+    "month": "2025-11-01",
+    "issue": "structural_blank_bands_proven_zero",
+    "cells": 1537343,
+    "handling": "Only blank cells whose nonnegative observed row counts already equal the official total are resolved to zero; explicit suppression tokens remain NULL."
+  },
+  {
+    "dataset": "rtt",
+    "month": "2025-12-01",
+    "issue": "structural_blank_bands_proven_zero",
+    "cells": 1501932,
+    "handling": "Only blank cells whose nonnegative observed row counts already equal the official total are resolved to zero; explicit suppression tokens remain NULL."
+  },
+  {
+    "dataset": "rtt",
+    "month": "2026-01-01",
+    "issue": "structural_blank_bands_proven_zero",
+    "cells": 1516387,
+    "handling": "Only blank cells whose nonnegative observed row counts already equal the official total are resolved to zero; explicit suppression tokens remain NULL."
+  },
+  {
+    "dataset": "rtt",
+    "month": "2026-02-01",
+    "issue": "structural_blank_bands_proven_zero",
+    "cells": 1518150,
+    "handling": "Only blank cells whose nonnegative observed row counts already equal the official total are resolved to zero; explicit suppression tokens remain NULL."
+  },
+  {
+    "dataset": "rtt",
+    "month": "2026-03-01",
+    "issue": "structural_blank_bands_proven_zero",
+    "cells": 1532192,
+    "handling": "Only blank cells whose nonnegative observed row counts already equal the official total are resolved to zero; explicit suppression tokens remain NULL."
+  },
+  {
+    "dataset": "rtt",
+    "month": "2026-04-01",
+    "issue": "structural_blank_bands_proven_zero",
+    "cells": 1493304,
+    "handling": "Only blank cells whose nonnegative observed row counts already equal the official total are resolved to zero; explicit suppression tokens remain NULL."
+  },
+  {
+    "dataset": "rtt",
+    "month": "2026-05-01",
+    "issue": "structural_blank_bands_proven_zero",
+    "cells": 1534936,
+    "handling": "Only blank cells whose nonnegative observed row counts already equal the official total are resolved to zero; explicit suppression tokens remain NULL."
+  },
+  {
+    "dataset": "rtt",
+    "month": "2026-06-01",
+    "issue": "structural_blank_bands_proven_zero",
+    "cells": 1555853,
+    "handling": "Only blank cells whose nonnegative observed row counts already equal the official total are resolved to zero; explicit suppression tokens remain NULL."
+  },
+  {
+    "dataset": "rtt",
+    "month": "2026-07-01",
+    "issue": "structural_blank_bands_proven_zero",
+    "cells": 1575315,
+    "handling": "Only blank cells whose nonnegative observed row counts already equal the official total are resolved to zero; explicit suppression tokens remain NULL."
+  },
+  {
+    "dataset": "rtt",
+    "month": "2026-08-01",
+    "issue": "structural_blank_bands_proven_zero",
+    "cells": 1495571,
+    "handling": "Only blank cells whose nonnegative observed row counts already equal the official total are resolved to zero; explicit suppression tokens remain NULL."
+  },
+  {
+    "dataset": "ae",
+    "month": "2024-09-01",
+    "issue": "empty_trailing_csv_columns",
+    "columns": [
+      "Unnamed: 22",
+      "Unnamed: 23",
+      "Unnamed: 24",
+      "Unnamed: 25",
+      "Unnamed: 26",
+      "a"
+    ],
+    "handling": "Profiled and ignored only after proving every cell is empty; named measure columns remain strict."
+  },
+  {
+    "dataset": "diagnostics",
+    "month": "2024-09-01",
+    "issue": "missing_provider_names",
+    "rows": 45,
+    "handling": "retain code; do not invent organisation identity"
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.0.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY24SU11",
+      "reportVersionAtImport": {
+        "visual": "2.1.0",
+        "page": "2.0.0",
+        "report": "3.0.0"
+      },
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "NHS_Operations",
+      "reportVersionAtImport": {
+        "visual": "2.1.0",
+        "page": "2.0.0",
+        "report": "3.0.0"
+      },
+      "type": "RegisteredResources"
+    }
+  },
+  "resourcePackages": [
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "NHS_Operations",
+          "path": "NHS_Operations.json",
+          "type": "CustomTheme"
+        }
+      ]
+    }
+  ]
+}

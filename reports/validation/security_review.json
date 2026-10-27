@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "candidate_files": 275,
+  "candidate_bytes": 52037533,
+  "findings": [],
+  "scope": "Git candidates; token/private-key patterns, ignored artifact leakage, patient identifier columns, workbook XML, file sizes",
+  "data_classification": "Published NHS provider/commissioner/specialty/test aggregates only; no patient records",
+  "attribution": "Official NHS terms verified as Open Government Licence reuse with exclusions; see docs/DATA_ATTRIBUTION.md",
+  "limitations": "Pattern scans are not a formal security certification; manually reviewed source definitions and publication scope remain necessary"
+}

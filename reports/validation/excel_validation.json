@@ -1,0 +1,48 @@
+{
+  "headline_volume_reconciliation": {
+    "rtt": true,
+    "ae": true,
+    "diagnostics": true
+  },
+  "headline_rate_reconciliation": {
+    "rtt": true,
+    "ae": true,
+    "diagnostics": true
+  },
+  "formula_errors": [],
+  "intentional_chart_gaps": [
+    {
+      "sheet": "Source Data",
+      "cell": "$Q$33",
+      "handling": "Intentional NA in hidden chart helper prevents missing publication data from plotting as zero"
+    }
+  ],
+  "sheets": [
+    "Executive Summary",
+    "RTT Performance",
+    "A&E Performance",
+    "Diagnostics Performance",
+    "Provider Comparisons",
+    "Monthly Trends",
+    "Operational Priorities",
+    "KPI Definitions",
+    "Data Quality Summary",
+    "Scenario Analysis",
+    "Source Data"
+  ],
+  "native_charts": 5,
+  "pivot_tables": 1,
+  "power_queries": 1,
+  "power_query_refresh": "Stored M query validated for existence; not refreshed through an external connection",
+  "excel_version": "16.0",
+  "headline_display": [
+    "71,58,164",
+    "24,44,743",
+    "18,33,070"
+  ],
+  "status": "PASS",
+  "chart_series_counts": {
+    "Executive Summary": 2,
+    "Monthly Trends": 2
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "json_files": 59,
+  "failed": 0,
+  "results": [
+    {
+      "file": "NHS_Healthcare_Operations_Intelligence.pbip",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.SemanticModel/definition.pbism",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition.pbir",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/report.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/version.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/pages.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Executive/page.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Monitoring/page.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/RTT/page.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/UrgentDiagnostics/page.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/UrgentDiagnostics/visuals/ae_activity/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/UrgentDiagnostics/visuals/context_note/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/UrgentDiagnostics/visuals/date_filter/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/UrgentDiagnostics/visuals/diagnostic_test/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/UrgentDiagnostics/visuals/kpi_0/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/UrgentDiagnostics/visuals/kpi_1/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/UrgentDiagnostics/visuals/kpi_2/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/UrgentDiagnostics/visuals/kpi_3/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/UrgentDiagnostics/visuals/page_title/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/UrgentDiagnostics/visuals/provider_filter/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/UrgentDiagnostics/visuals/selected_provider/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/RTT/visuals/context_note/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/RTT/visuals/date_filter/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/RTT/visuals/kpi_0/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/RTT/visuals/kpi_1/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/RTT/visuals/kpi_2/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/RTT/visuals/kpi_3/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/RTT/visuals/long_wait_trend/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/RTT/visuals/page_title/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/RTT/visuals/provider_detail/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/RTT/visuals/provider_filter/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/RTT/visuals/specialty/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Monitoring/visuals/context_note/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Monitoring/visuals/coverage_checks/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Monitoring/visuals/date_filter/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Monitoring/visuals/kpi_0/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Monitoring/visuals/kpi_1/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Monitoring/visuals/kpi_2/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Monitoring/visuals/kpi_3/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Monitoring/visuals/monitor_0/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Monitoring/visuals/monitor_1/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Monitoring/visuals/monitor_2/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Monitoring/visuals/monitor_3/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Monitoring/visuals/page_title/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Monitoring/visuals/pipeline_runs/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Monitoring/visuals/provider_filter/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Monitoring/visuals/quality_note/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Monitoring/visuals/source_dates/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Executive/visuals/ae_trend/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Executive/visuals/context_note/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Executive/visuals/date_filter/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Executive/visuals/kpi_0/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Executive/visuals/kpi_1/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Executive/visuals/kpi_2/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Executive/visuals/kpi_3/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Executive/visuals/page_title/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Executive/visuals/provider_filter/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Executive/visuals/provider_summary/visual.json",
+      "errors": []
+    },
+    {
+      "file": "NHS_Healthcare.Report/definition/pages/Executive/visuals/rtt_trend/visual.json",
+      "errors": []
+    }
+  ],
+  "desktop_open": "not yet verified",
+  "tmdl": "requires TOM/Desktop validation",
+  "dax": "requires execution against refreshed semantic model"
+}

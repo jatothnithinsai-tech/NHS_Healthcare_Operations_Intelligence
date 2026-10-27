@@ -1,0 +1,22 @@
+table 'Service'
+	lineageTag: 21b2241c-0a0b-5c19-9b2a-3072bddea646
+
+	column 'test_code'
+		dataType: string
+		sourceColumn: test_code
+		summarizeBy: none
+
+	column 'test_name'
+		dataType: string
+		sourceColumn: test_name
+		summarizeBy: none
+
+	partition 'Service' = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataRoot & "/Service.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				Typed = Table.TransformColumnTypes(Headers, {{"test_code", type text}, {"test_name", type text}}, "en-GB")
+			in
+				Typed

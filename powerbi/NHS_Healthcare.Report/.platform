@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "NHS_Healthcare_Operations_Intelligence"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "753ef725-54e5-4d50-a076-d7241fa48ce7"
+  }
+}

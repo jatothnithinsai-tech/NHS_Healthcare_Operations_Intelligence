@@ -1,0 +1,290 @@
+table 'RTT'
+	lineageTag: 68f52e57-d013-50f9-ab4a-57427d7836be
+
+	column 'month'
+		dataType: dateTime
+		sourceColumn: month
+		summarizeBy: none
+		formatString: yyyy-MM-dd
+
+	column 'provider_code'
+		dataType: string
+		sourceColumn: provider_code
+		summarizeBy: none
+		isHidden
+
+	column 'parent_code'
+		dataType: string
+		sourceColumn: parent_code
+		summarizeBy: none
+		isHidden
+
+	column 'specialty_code'
+		dataType: string
+		sourceColumn: specialty_code
+		summarizeBy: none
+		isHidden
+
+	column 'pathway_type'
+		dataType: string
+		sourceColumn: pathway_type
+		summarizeBy: none
+
+	column 'waiting_count'
+		dataType: int64
+		sourceColumn: waiting_count
+		summarizeBy: sum
+
+	column 'total_all'
+		dataType: int64
+		sourceColumn: total_all
+		summarizeBy: sum
+
+	column 'unknown_start'
+		dataType: int64
+		sourceColumn: unknown_start
+		summarizeBy: sum
+
+	column 'within_18'
+		dataType: int64
+		sourceColumn: within_18
+		summarizeBy: sum
+
+	column 'over_18'
+		dataType: int64
+		sourceColumn: over_18
+		summarizeBy: sum
+
+	column 'over_52'
+		dataType: int64
+		sourceColumn: over_52
+		summarizeBy: sum
+
+	column 'over_65'
+		dataType: int64
+		sourceColumn: over_65
+		summarizeBy: sum
+
+	column 'over_78'
+		dataType: int64
+		sourceColumn: over_78
+		summarizeBy: sum
+
+	column 'over_104'
+		dataType: int64
+		sourceColumn: over_104
+		summarizeBy: sum
+
+	column 'source_sha256'
+		dataType: string
+		sourceColumn: source_sha256
+		summarizeBy: none
+		isHidden
+
+	measure 'RTT Pathways' = CALCULATE(IF(COUNT(RTT[waiting_count])=COUNTROWS(RTT),SUM(RTT[waiting_count])),RTT[pathway_type]="Part_2")
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'RTT Within18' = CALCULATE(IF(COUNT(RTT[within_18])=COUNTROWS(RTT),SUM(RTT[within_18])),RTT[pathway_type]="Part_2")
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'RTT Within18 Rate' = DIVIDE([RTT Within18],[RTT Pathways])
+		formatString: 0.0%
+		displayFolder: Operational KPIs
+
+	measure 'RTT Over18' = CALCULATE(IF(COUNT(RTT[over_18])=COUNTROWS(RTT),SUM(RTT[over_18])),RTT[pathway_type]="Part_2")
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'RTT Over52' = CALCULATE(IF(COUNT(RTT[over_52])=COUNTROWS(RTT),SUM(RTT[over_52])),RTT[pathway_type]="Part_2")
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'RTT Over65' = CALCULATE(IF(COUNT(RTT[over_65])=COUNTROWS(RTT),SUM(RTT[over_65])),RTT[pathway_type]="Part_2")
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'RTT Over78' = CALCULATE(IF(COUNT(RTT[over_78])=COUNTROWS(RTT),SUM(RTT[over_78])),RTT[pathway_type]="Part_2")
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'RTT Over104' = CALCULATE(IF(COUNT(RTT[over_104])=COUNTROWS(RTT),SUM(RTT[over_104])),RTT[pathway_type]="Part_2")
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'RTT Admitted Completed' = CALCULATE(SUM(RTT[total_all]),RTT[pathway_type]="Part_1A")
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'RTT Nonadmitted Completed' = CALCULATE(SUM(RTT[total_all]),RTT[pathway_type]="Part_1B")
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'AE Attendances' = IF(COUNT(AE[attendances])=COUNTROWS(AE),SUM(AE[attendances]))
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'AE Within4 Rate' = DIVIDE(IF(COUNT(AE[within_4])=COUNTROWS(AE),SUM(AE[within_4])),[AE Attendances])
+		formatString: 0.0%
+		displayFolder: Operational KPIs
+
+	measure 'AE Type1 Within4 Rate' = DIVIDE(SUM(AE[type1_attendances])-SUM(AE[type1_over_4]),SUM(AE[type1_attendances]))
+		formatString: 0.0%
+		displayFolder: Operational KPIs
+
+	measure 'Emergency Admissions' = IF(COUNT(AE[emergency_admissions])=COUNTROWS(AE),SUM(AE[emergency_admissions]))
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'DTA12 Plus' = IF(COUNT(AE[dta_12_plus])=COUNTROWS(AE),SUM(AE[dta_12_plus]))
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'Diagnostic Waiting' = IF(COUNT(Diagnostics[waiting_count])=COUNTROWS(Diagnostics),SUM(Diagnostics[waiting_count]))
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'Diagnostic Over6' = IF(COUNT(Diagnostics[over_6])=COUNTROWS(Diagnostics),SUM(Diagnostics[over_6]))
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'Diagnostic SixWeek Rate' = DIVIDE([Diagnostic Over6],[Diagnostic Waiting])
+		formatString: 0.0%
+		displayFolder: Operational KPIs
+
+	measure 'Diagnostic Activity' = IF(COUNT(Diagnostics[total_activity])=COUNTROWS(Diagnostics),SUM(Diagnostics[total_activity]))
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'RTT Latest Month' = MAX(RTT[month])
+		formatString: MMM yyyy
+		displayFolder: Operational KPIs
+
+	measure 'AE Latest Month' = MAX(AE[month])
+		formatString: MMM yyyy
+		displayFolder: Operational KPIs
+
+	measure 'Diagnostic Latest Month' = MAX(Diagnostics[month])
+		formatString: MMM yyyy
+		displayFolder: Operational KPIs
+
+	measure 'RTT Previous Year' = CALCULATE([RTT Pathways],SAMEPERIODLASTYEAR('Date'[month]))
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'RTT YoY Change' = IF(NOT ISBLANK([RTT Previous Year]),[RTT Pathways]-[RTT Previous Year])
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'Providers Over1000 LongWaits' = COUNTROWS(FILTER(VALUES(Provider[provider_code]),[RTT Over52]>=1000))
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'Source Files' = COUNTROWS(Sources)
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'Publisher Revisions' = COUNTROWS(FILTER(Sources,Sources[publisher_revision_label]=TRUE()))
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'Source Retrieval Age Days' = DATEDIFF(MAX(Sources[retrieved_at]),NOW(),DAY)
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'Missing Domains' = 3-DISTINCTCOUNT(Sources[dataset])
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'Failed Quality Checks' = COUNTROWS(FILTER(Quality,Quality[status]<>"PASS"))
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'Validation Status' = IF([Failed Quality Checks]=0,"PASS","FAIL")
+		displayFolder: Operational KPIs
+
+	measure 'Unverified Publication Dates' = COUNTROWS(FILTER(Sources,ISBLANK(Sources[publication_date])))
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'Latest Pipeline Status' = VAR t=TOPN(1,Pipeline,Pipeline[started_at],DESC) RETURN CONCATENATEX(t,Pipeline[status],",")
+		displayFolder: Operational KPIs
+
+	measure 'Latest Source Retrieval' = MAX(Sources[retrieved_at])
+		formatString: dd MMM yyyy HH:mm
+		displayFolder: Operational KPIs
+
+	measure 'RTT Pathways Latest' = VAR latestMonth=MAX(RTT[month]) RETURN CALCULATE([RTT Pathways],KEEPFILTERS('Date'[month]=latestMonth))
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'RTT Within18 Rate Latest' = VAR latestMonth=MAX(RTT[month]) RETURN CALCULATE([RTT Within18 Rate],KEEPFILTERS('Date'[month]=latestMonth))
+		formatString: 0.0%
+		displayFolder: Operational KPIs
+
+	measure 'RTT Over52 Latest' = VAR latestMonth=MAX(RTT[month]) RETURN CALCULATE([RTT Over52],KEEPFILTERS('Date'[month]=latestMonth))
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'RTT Over65 Latest' = VAR latestMonth=MAX(RTT[month]) RETURN CALCULATE([RTT Over65],KEEPFILTERS('Date'[month]=latestMonth))
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'RTT Over78 Latest' = VAR latestMonth=MAX(RTT[month]) RETURN CALCULATE([RTT Over78],KEEPFILTERS('Date'[month]=latestMonth))
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'RTT Over104 Latest' = VAR latestMonth=MAX(RTT[month]) RETURN CALCULATE([RTT Over104],KEEPFILTERS('Date'[month]=latestMonth))
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'AE Attendances Latest' = VAR latestMonth=MAX(AE[month]) RETURN CALCULATE([AE Attendances],KEEPFILTERS('Date'[month]=latestMonth))
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'AE Within4 Rate Latest' = VAR latestMonth=MAX(AE[month]) RETURN CALCULATE([AE Within4 Rate],KEEPFILTERS('Date'[month]=latestMonth))
+		formatString: 0.0%
+		displayFolder: Operational KPIs
+
+	measure 'Emergency Admissions Latest' = VAR latestMonth=MAX(AE[month]) RETURN CALCULATE([Emergency Admissions],KEEPFILTERS('Date'[month]=latestMonth))
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'DTA12 Plus Latest' = VAR latestMonth=MAX(AE[month]) RETURN CALCULATE([DTA12 Plus],KEEPFILTERS('Date'[month]=latestMonth))
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'Diagnostic Waiting Latest' = VAR latestMonth=MAX(Diagnostics[month]) RETURN CALCULATE([Diagnostic Waiting],KEEPFILTERS('Date'[month]=latestMonth))
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'Diagnostic Over6 Latest' = VAR latestMonth=MAX(Diagnostics[month]) RETURN CALCULATE([Diagnostic Over6],KEEPFILTERS('Date'[month]=latestMonth))
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'Diagnostic SixWeek Rate Latest' = VAR latestMonth=MAX(Diagnostics[month]) RETURN CALCULATE([Diagnostic SixWeek Rate],KEEPFILTERS('Date'[month]=latestMonth))
+		formatString: 0.0%
+		displayFolder: Operational KPIs
+
+	measure 'Diagnostic Activity Latest' = VAR latestMonth=MAX(Diagnostics[month]) RETURN CALCULATE([Diagnostic Activity],KEEPFILTERS('Date'[month]=latestMonth))
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'RTT MoM Latest' = VAR m=MAX(RTT[month]) VAR currentValue=CALCULATE([RTT Pathways],'Date'[month]=m) VAR previousValue=CALCULATE([RTT Pathways],REMOVEFILTERS('Date'),'Date'[month]=EDATE(m,-1)) RETURN IF(NOT ISBLANK(previousValue),currentValue-previousValue)
+		formatString: #,0
+		displayFolder: Operational KPIs
+
+	measure 'AE MoM pp Latest' = VAR m=MAX(AE[month]) VAR currentValue=CALCULATE([AE Within4 Rate],'Date'[month]=m) VAR previousValue=CALCULATE([AE Within4 Rate],REMOVEFILTERS('Date'),'Date'[month]=EDATE(m,-1)) RETURN IF(NOT ISBLANK(previousValue),100*(currentValue-previousValue))
+		formatString: 0.00 "pp"
+		displayFolder: Operational KPIs
+
+	partition 'RTT' = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataRoot & "/RTT.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				Typed = Table.TransformColumnTypes(Headers, {{"month", type datetime}, {"provider_code", type text}, {"parent_code", type text}, {"specialty_code", type text}, {"pathway_type", type text}, {"waiting_count", Int64.Type}, {"total_all", Int64.Type}, {"unknown_start", Int64.Type}, {"within_18", Int64.Type}, {"over_18", Int64.Type}, {"over_52", Int64.Type}, {"over_65", Int64.Type}, {"over_78", Int64.Type}, {"over_104", Int64.Type}, {"source_sha256", type text}}, "en-GB")
+			in
+				Typed

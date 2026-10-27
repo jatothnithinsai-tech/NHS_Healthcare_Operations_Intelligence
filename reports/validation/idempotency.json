@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "before": {
+    "fact_rtt": {
+      "rows": 236171,
+      "fingerprint": "87b27a1ffa48e3081d41861b8f7fb6b1"
+    },
+    "fact_ae": {
+      "rows": 4918,
+      "fingerprint": "1d7779e8a639eb0b4cb22474d444484d"
+    },
+    "fact_diagnostics": {
+      "rows": 162750,
+      "fingerprint": "72ebf5b0e77191be9819e82ff96a28fd"
+    }
+  },
+  "after": {
+    "fact_rtt": {
+      "rows": 236171,
+      "fingerprint": "87b27a1ffa48e3081d41861b8f7fb6b1"
+    },
+    "fact_ae": {
+      "rows": 4918,
+      "fingerprint": "1d7779e8a639eb0b4cb22474d444484d"
+    },
+    "fact_diagnostics": {
+      "rows": 162750,
+      "fingerprint": "72ebf5b0e77191be9819e82ff96a28fd"
+    }
+  },
+  "loaded": 0,
+  "skipped": 73,
+  "run_id": "485b88ff-5f83-41ce-a547-687c3c5adf89"
+}

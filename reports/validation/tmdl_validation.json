@@ -1,0 +1,9 @@
+﻿{
+    "measures":  50,
+    "database":  "NHS_Healthcare",
+    "relationships":  11,
+    "tables":  12,
+    "desktopVersion":  "2.159.883.0",
+    "status":  "PASS",
+    "validation":  "Parsed by Microsoft public TOM TmdlSerializer; installed Desktop version recorded separately. DAX execution requires refreshed model"
+}

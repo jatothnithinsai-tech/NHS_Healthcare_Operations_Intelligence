@@ -1,0 +1,85 @@
+table 'AE'
+	lineageTag: eaac638f-e1ac-5f19-8e99-fcdb62656f29
+
+	column 'month'
+		dataType: dateTime
+		sourceColumn: month
+		summarizeBy: none
+		formatString: yyyy-MM-dd
+
+	column 'provider_code'
+		dataType: string
+		sourceColumn: provider_code
+		summarizeBy: none
+		isHidden
+
+	column 'region_name'
+		dataType: string
+		sourceColumn: region_name
+		summarizeBy: none
+
+	column 'attendances'
+		dataType: int64
+		sourceColumn: attendances
+		summarizeBy: sum
+
+	column 'over_4'
+		dataType: int64
+		sourceColumn: over_4
+		summarizeBy: sum
+
+	column 'within_4'
+		dataType: int64
+		sourceColumn: within_4
+		summarizeBy: sum
+
+	column 'type1_attendances'
+		dataType: int64
+		sourceColumn: type1_attendances
+		summarizeBy: sum
+
+	column 'type1_over_4'
+		dataType: int64
+		sourceColumn: type1_over_4
+		summarizeBy: sum
+
+	column 'admissions_via_ae'
+		dataType: int64
+		sourceColumn: admissions_via_ae
+		summarizeBy: sum
+
+	column 'other_admissions'
+		dataType: int64
+		sourceColumn: other_admissions
+		summarizeBy: sum
+
+	column 'emergency_admissions'
+		dataType: int64
+		sourceColumn: emergency_admissions
+		summarizeBy: sum
+
+	column 'dta_4_12'
+		dataType: int64
+		sourceColumn: dta_4_12
+		summarizeBy: sum
+
+	column 'dta_12_plus'
+		dataType: int64
+		sourceColumn: dta_12_plus
+		summarizeBy: sum
+
+	column 'source_sha256'
+		dataType: string
+		sourceColumn: source_sha256
+		summarizeBy: none
+		isHidden
+
+	partition 'AE' = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataRoot & "/AE.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				Typed = Table.TransformColumnTypes(Headers, {{"month", type datetime}, {"provider_code", type text}, {"region_name", type text}, {"attendances", Int64.Type}, {"over_4", Int64.Type}, {"within_4", Int64.Type}, {"type1_attendances", Int64.Type}, {"type1_over_4", Int64.Type}, {"admissions_via_ae", Int64.Type}, {"other_admissions", Int64.Type}, {"emergency_admissions", Int64.Type}, {"dta_4_12", Int64.Type}, {"dta_12_plus", Int64.Type}, {"source_sha256", type text}}, "en-GB")
+			in
+				Typed

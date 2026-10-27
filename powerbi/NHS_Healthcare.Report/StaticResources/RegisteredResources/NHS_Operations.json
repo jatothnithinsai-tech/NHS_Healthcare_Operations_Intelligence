@@ -1,0 +1,24 @@
+{
+  "name": "NHS_Operations",
+  "dataColors": [
+    "#007F86",
+    "#123047",
+    "#5B8BA3",
+    "#78BDB4",
+    "#B5C7D3",
+    "#C88448"
+  ],
+  "background": "#F3F6F8",
+  "foreground": "#123047",
+  "tableAccent": "#007F86",
+  "textClasses": {
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "color": "#123047"
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "color": "#526575"
+    }
+  }
+}

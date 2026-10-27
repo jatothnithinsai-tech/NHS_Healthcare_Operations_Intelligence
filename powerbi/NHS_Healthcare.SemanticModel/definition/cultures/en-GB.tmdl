@@ -1,0 +1,1024 @@
+cultureInfo en-GB
+
+	linguisticMetadata =
+			{
+			  "Version": "2.0.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "date.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date",
+			          "ConceptualProperty": "month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Month": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "date.month_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date",
+			          "ConceptualProperty": "month_name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Reporting month": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.ae_within4_rate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "AE Within4 Rate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Four-hour performance": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.ae_attendances": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "AE Attendances"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Attendances": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.rtt_pathways_latest": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "RTT Pathways Latest"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Incomplete RTT pathways": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "RTT pathways": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Incomplete pathways": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Pathways": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.rtt_within18_rate_latest": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "RTT Within18 Rate Latest"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "RTT within 18 weeks": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Within18": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.ae_within4_rate_latest": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "AE Within4 Rate Latest"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "A&E within four hours": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "A&E within4": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.diagnostic_sixweek_rate_latest": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "Diagnostic SixWeek Rate Latest"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Diagnostics six weeks or more": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Six-week rate": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Diagnostics six-week rate": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.rtt_over52_latest": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "RTT Over52 Latest"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Over52": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Over 52 weeks": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.ae_attendances_latest": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "AE Attendances Latest"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "A&E attendances": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.rtt_pathways": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "RTT Pathways"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Pathways": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.rtt_over52": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "RTT Over52"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Over52": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.rtt_mom_latest": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "RTT MoM Latest"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Monthly list change": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.rtt_latest_month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "RTT Latest Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "RTT reporting month": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.rtt_over78": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "RTT Over78"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Over78": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.rtt_over104": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "RTT Over104"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Over104": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.rtt_over65_latest": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "RTT Over65 Latest"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Over65": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.emergency_admissions": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "Emergency Admissions"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Emergency admissions": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.diagnostic_over6_latest": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "Diagnostic Over6 Latest"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Six-week-or-more waits": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.dta12_plus_latest": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "DTA12 Plus Latest"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "12+ hours after decision to admit": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.diagnostic_waiting_latest": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "Diagnostic Waiting Latest"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Diagnostic waits": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.diagnostic_activity_latest": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "Diagnostic Activity Latest"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Diagnostic activity": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.source_files": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "Source Files"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Retained source versions": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.unverified_publication_dates": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "Unverified Publication Dates"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Publication dates awaiting verification": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.latest_pipeline_status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "Latest Pipeline Status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Latest pipeline status": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.latest_source_retrieval": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "Latest Source Retrieval"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Latest source retrieval": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "provider.provider_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Provider",
+			          "ConceptualProperty": "provider_name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Provider": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "specialty.specialty_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Specialty",
+			          "ConceptualProperty": "specialty_name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Specialty": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "service.test_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Service",
+			          "ConceptualProperty": "test_name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Diagnostic test": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "pipeline.started_at": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Pipeline",
+			          "ConceptualProperty": "started_at"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Started": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "pipeline.finished_at": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Pipeline",
+			          "ConceptualProperty": "finished_at"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Finished": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "pipeline.status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Pipeline",
+			          "ConceptualProperty": "status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Status": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "pipeline.loaded_files": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Pipeline",
+			          "ConceptualProperty": "loaded_files"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Changed files": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "pipeline.unchanged_files": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Pipeline",
+			          "ConceptualProperty": "unchanged_files"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Unchanged files": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "sources.dataset": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sources",
+			          "ConceptualProperty": "dataset"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Dataset": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "sources.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sources",
+			          "ConceptualProperty": "month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Reporting month": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "sources.publication_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sources",
+			          "ConceptualProperty": "publication_date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Publication date": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "sources.sha256": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sources",
+			          "ConceptualProperty": "sha256"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "rtt.source_retrieval_age_days": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "Source Retrieval Age Days"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Days since retrieval": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.missing_domains": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "Missing Domains"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Missing data domains": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.publisher_revisions": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "Publisher Revisions"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Publisher-labelled revised files": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rtt.validation_status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RTT",
+			          "ConceptualProperty": "Validation Status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Warehouse validation status": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "quality.check_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Quality",
+			          "ConceptualProperty": "check_name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Check": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "quality.status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Quality",
+			          "ConceptualProperty": "status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Status": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "quality.months": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Quality",
+			          "ConceptualProperty": "months"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Months": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

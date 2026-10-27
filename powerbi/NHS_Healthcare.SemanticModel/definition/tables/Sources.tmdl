@@ -1,0 +1,60 @@
+table 'Sources'
+	lineageTag: ec9fe511-446d-561c-8dbc-7147d17275c1
+
+	column 'dataset'
+		dataType: string
+		sourceColumn: dataset
+		summarizeBy: none
+
+	column 'month'
+		dataType: dateTime
+		sourceColumn: month
+		summarizeBy: none
+		formatString: yyyy-MM-dd
+
+	column 'publication_date'
+		dataType: dateTime
+		sourceColumn: publication_date
+		summarizeBy: none
+		formatString: yyyy-MM-dd
+
+	column 'retrieved_at'
+		dataType: dateTime
+		sourceColumn: retrieved_at
+		summarizeBy: none
+		formatString: dd MMM yyyy HH:mm:ss
+
+	column 'sha256'
+		dataType: string
+		sourceColumn: sha256
+		summarizeBy: none
+
+	column 'bytes'
+		dataType: int64
+		sourceColumn: bytes
+		summarizeBy: sum
+
+	column 'url'
+		dataType: string
+		sourceColumn: url
+		summarizeBy: none
+
+	column 'publisher_revision_label'
+		dataType: boolean
+		sourceColumn: publisher_revision_label
+		summarizeBy: none
+
+	column 'download_status'
+		dataType: string
+		sourceColumn: download_status
+		summarizeBy: none
+
+	partition 'Sources' = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataRoot & "/Sources.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				Typed = Table.TransformColumnTypes(Headers, {{"dataset", type text}, {"month", type datetime}, {"publication_date", type datetime}, {"retrieved_at", type datetime}, {"sha256", type text}, {"bytes", Int64.Type}, {"url", type text}, {"publisher_revision_label", type logical}, {"download_status", type text}}, "en-GB")
+			in
+				Typed

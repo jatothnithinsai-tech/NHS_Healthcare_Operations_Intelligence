@@ -1,0 +1,43 @@
+{
+  "run_id": "485b88ff-5f83-41ce-a547-687c3c5adf89",
+  "started_at": "2026-10-26T23:44:07.284997+00:00",
+  "loaded": 0,
+  "skipped": 73,
+  "checks": [
+    {
+      "check": "rtt_consecutive_months",
+      "status": "PASS",
+      "months": 24
+    },
+    {
+      "check": "rtt_audit_row_counts",
+      "status": "PASS",
+      "rows": 236171
+    },
+    {
+      "check": "ae_consecutive_months",
+      "status": "PASS",
+      "months": 25
+    },
+    {
+      "check": "ae_audit_row_counts",
+      "status": "PASS",
+      "rows": 4918
+    },
+    {
+      "check": "diagnostics_consecutive_months",
+      "status": "PASS",
+      "months": 24
+    },
+    {
+      "check": "diagnostics_audit_row_counts",
+      "status": "PASS",
+      "rows": 162750
+    }
+  ],
+  "seconds": 17.614,
+  "source_files": 73,
+  "source_rows": 7918106,
+  "fact_rows": 403839,
+  "issues": 26
+}

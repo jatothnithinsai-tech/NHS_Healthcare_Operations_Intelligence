@@ -1,0 +1,10 @@
+{
+  "source_url": "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2026/06/System-Mapping-Apr-26.xls",
+  "sha256": "12aa85f5dcb5fff4dade390f04e4e24fd9b487a12566e34670e39e6ae15e044c",
+  "rows": 201,
+  "unique_provider_codes": 201,
+  "source_last_updated": "2026-05-14",
+  "use": "Current A&E provider-to-ICB reference only; not backdated onto historical RTT or DM01",
+  "validation": "Exact duplicate reference rows removed. Ambiguous provider-to-ICB mappings retained explicitly and prohibited from one-to-one enrichment; the file is reference-only.",
+  "ambiguous_provider_codes": []
+}

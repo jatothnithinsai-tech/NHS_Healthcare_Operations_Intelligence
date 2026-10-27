@@ -1,0 +1,230 @@
+{
+  "status": "PASS",
+  "connection": "Actual local Power BI Desktop engine; endpoint retained only in ignored local state",
+  "catalog": "68b99412-14e6-4ad2-bac2-2a9959fdbe7c",
+  "checks": [
+    {
+      "check": "RTT waiting",
+      "dax": "7158164",
+      "sql": 7158164.0,
+      "absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check": "RTT within18 rate",
+      "dax": 0.6520602210287443,
+      "sql": 0.6520602210287443,
+      "absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check": "RTT over52",
+      "dax": "109936",
+      "sql": 109936.0,
+      "absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check": "A&E attendances",
+      "dax": "2444743",
+      "sql": 2444743.0,
+      "absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check": "A&E four-hour rate",
+      "dax": 0.7436331753480836,
+      "sql": 0.7436331753480836,
+      "absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check": "Diagnostic waiting",
+      "dax": "1833070",
+      "sql": 1833070.0,
+      "absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check": "Diagnostic six-week rate",
+      "dax": 0.2467478055938944,
+      "sql": 0.2467478055938944,
+      "absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check": "Diagnostic activity",
+      "dax": "2516963",
+      "sql": 2516963.0,
+      "absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check": "Provider/date dimension filter context",
+      "provider_code": "RAJ",
+      "month": "2026-08-01",
+      "dax": "165234",
+      "sql": 165234,
+      "status": "PASS"
+    },
+    {
+      "check": "All monthly domain totals",
+      "matched_months": 25,
+      "expected_months": 25,
+      "status": "PASS"
+    }
+  ],
+  "visible_measures": 51,
+  "monthly_dax": [
+    {
+      "Date[month]": "2024-09-01 00:00:00+00:00",
+      "[RTTWaiting]": "7571549",
+      "[AEAttendances]": "2214217",
+      "[DiagnosticWaiting]": "1592553"
+    },
+    {
+      "Date[month]": "2024-10-01 00:00:00+00:00",
+      "[RTTWaiting]": "7541371",
+      "[AEAttendances]": "2360536",
+      "[DiagnosticWaiting]": "1636424"
+    },
+    {
+      "Date[month]": "2024-11-01 00:00:00+00:00",
+      "[RTTWaiting]": "7479867",
+      "[AEAttendances]": "2314998",
+      "[DiagnosticWaiting]": "1620824"
+    },
+    {
+      "Date[month]": "2024-12-01 00:00:00+00:00",
+      "[RTTWaiting]": "7463085",
+      "[AEAttendances]": "2345934",
+      "[DiagnosticWaiting]": "1568661"
+    },
+    {
+      "Date[month]": "2025-01-01 00:00:00+00:00",
+      "[RTTWaiting]": "7427669",
+      "[AEAttendances]": "2218130",
+      "[DiagnosticWaiting]": "1627995"
+    },
+    {
+      "Date[month]": "2025-02-01 00:00:00+00:00",
+      "[RTTWaiting]": "7401153",
+      "[AEAttendances]": "2088071",
+      "[DiagnosticWaiting]": "1674823"
+    },
+    {
+      "Date[month]": "2025-03-01 00:00:00+00:00",
+      "[RTTWaiting]": "7418598",
+      "[AEAttendances]": "2389064",
+      "[DiagnosticWaiting]": "1709380"
+    },
+    {
+      "Date[month]": "2025-04-01 00:00:00+00:00",
+      "[RTTWaiting]": "7389065",
+      "[AEAttendances]": "2297421",
+      "[DiagnosticWaiting]": "1703100"
+    },
+    {
+      "Date[month]": "2025-05-01 00:00:00+00:00",
+      "[RTTWaiting]": "7355950",
+      "[AEAttendances]": "2397529",
+      "[DiagnosticWaiting]": "1715934"
+    },
+    {
+      "Date[month]": "2025-06-01 00:00:00+00:00",
+      "[RTTWaiting]": "7367836",
+      "[AEAttendances]": "2351581",
+      "[DiagnosticWaiting]": "1739272"
+    },
+    {
+      "Date[month]": "2025-07-01 00:00:00+00:00",
+      "[RTTWaiting]": "7299023",
+      "[AEAttendances]": "2408866",
+      "[DiagnosticWaiting]": "1753665"
+    },
+    {
+      "Date[month]": "2025-08-01 00:00:00+00:00",
+      "[RTTWaiting]": "7312356",
+      "[AEAttendances]": "2266937",
+      "[DiagnosticWaiting]": "1683852"
+    },
+    {
+      "Date[month]": "2025-09-01 00:00:00+00:00",
+      "[RTTWaiting]": "7296893",
+      "[AEAttendances]": "2310222",
+      "[DiagnosticWaiting]": "1736880"
+    },
+    {
+      "Date[month]": "2025-10-01 00:00:00+00:00",
+      "[RTTWaiting]": "7304189",
+      "[AEAttendances]": "2401266",
+      "[DiagnosticWaiting]": "1794463"
+    },
+    {
+      "Date[month]": "2025-11-01 00:00:00+00:00",
+      "[RTTWaiting]": "7159010",
+      "[AEAttendances]": "2347046",
+      "[DiagnosticWaiting]": "1768507"
+    },
+    {
+      "Date[month]": "2025-12-01 00:00:00+00:00",
+      "[RTTWaiting]": "7199624",
+      "[AEAttendances]": "2326139",
+      "[DiagnosticWaiting]": "1749804"
+    },
+    {
+      "Date[month]": "2026-01-01 00:00:00+00:00",
+      "[RTTWaiting]": "7155958",
+      "[AEAttendances]": "2319296",
+      "[DiagnosticWaiting]": "1819211"
+    },
+    {
+      "Date[month]": "2026-02-01 00:00:00+00:00",
+      "[RTTWaiting]": "7124952",
+      "[AEAttendances]": "2117450",
+      "[DiagnosticWaiting]": "1869091"
+    },
+    {
+      "Date[month]": "2026-03-01 00:00:00+00:00",
+      "[RTTWaiting]": "7014835",
+      "[AEAttendances]": "2432272",
+      "[DiagnosticWaiting]": "1924199"
+    },
+    {
+      "Date[month]": "2026-04-01 00:00:00+00:00",
+      "[RTTWaiting]": "7093502",
+      "[AEAttendances]": "2345329",
+      "[DiagnosticWaiting]": "1951404"
+    },
+    {
+      "Date[month]": "2026-05-01 00:00:00+00:00",
+      "[RTTWaiting]": "7153655",
+      "[AEAttendances]": "2457398",
+      "[DiagnosticWaiting]": "1910025"
+    },
+    {
+      "Date[month]": "2026-06-01 00:00:00+00:00",
+      "[RTTWaiting]": "7147562",
+      "[AEAttendances]": "2437906",
+      "[DiagnosticWaiting]": "1930725"
+    },
+    {
+      "Date[month]": "2026-07-01 00:00:00+00:00",
+      "[RTTWaiting]": "7131685",
+      "[AEAttendances]": "2487580",
+      "[DiagnosticWaiting]": "1921259"
+    },
+    {
+      "Date[month]": "2026-08-01 00:00:00+00:00",
+      "[RTTWaiting]": "7158164",
+      "[AEAttendances]": "2342959",
+      "[DiagnosticWaiting]": "1833070"
+    },
+    {
+      "Date[month]": "2026-09-01 00:00:00+00:00",
+      "[RTTWaiting]": null,
+      "[AEAttendances]": "2444743",
+      "[DiagnosticWaiting]": null
+    }
+  ]
+}

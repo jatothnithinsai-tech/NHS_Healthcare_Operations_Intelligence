@@ -1,0 +1,404 @@
+{
+  "executed_at": "2026-10-27T00:15:51.901369+00:00",
+  "passed": 30,
+  "failed": 0,
+  "queries": [
+    {
+      "query": "01_national_rtt_trend.sql",
+      "status": "PASS",
+      "rows": 24,
+      "columns": [
+        "month",
+        "waiting_count",
+        "total_all",
+        "unknown_start",
+        "within_18",
+        "over_52",
+        "over_65",
+        "over_78",
+        "over_104",
+        "within_18_rate",
+        "providers",
+        "mom_change",
+        "mom_percentage_points"
+      ]
+    },
+    {
+      "query": "02_rtt_rolling_average.sql",
+      "status": "PASS",
+      "rows": 24,
+      "columns": [
+        "month",
+        "waiting_count",
+        "rolling_three_months"
+      ]
+    },
+    {
+      "query": "03_rtt_yoy.sql",
+      "status": "PASS",
+      "rows": 24,
+      "columns": [
+        "month",
+        "waiting_count",
+        "prior_year",
+        "yoy_pct"
+      ]
+    },
+    {
+      "query": "04_rtt_provider_rank.sql",
+      "status": "PASS",
+      "rows": 270,
+      "columns": [
+        "provider_name",
+        "month",
+        "provider_code",
+        "waiting_count",
+        "total_all",
+        "unknown_start",
+        "within_18",
+        "over_52",
+        "over_65",
+        "over_78",
+        "over_104",
+        "within_18_rate",
+        "long_wait_rank",
+        "performance_rank"
+      ]
+    },
+    {
+      "query": "05_rtt_specialty.sql",
+      "status": "PASS",
+      "rows": 23,
+      "columns": [
+        "specialty_code",
+        "specialty_name",
+        "waiting",
+        "over_52",
+        "within_18_rate"
+      ]
+    },
+    {
+      "query": "06_rtt_distribution.sql",
+      "status": "PASS",
+      "rows": 24,
+      "columns": [
+        "month",
+        "within_18",
+        "over_18_to_52",
+        "over_52_to_65",
+        "over_65_to_78",
+        "over_78_to_104",
+        "over_104"
+      ]
+    },
+    {
+      "query": "07_completed_pathway_mix.sql",
+      "status": "PASS",
+      "rows": 24,
+      "columns": [
+        "month",
+        "admitted_completed",
+        "nonadmitted_completed",
+        "unknown_start"
+      ]
+    },
+    {
+      "query": "08_long_wait_concentration.sql",
+      "status": "PASS",
+      "rows": 24,
+      "columns": [
+        "month",
+        "top10_over52",
+        "total_over52",
+        "share"
+      ]
+    },
+    {
+      "query": "09_rtt_provider_gap.sql",
+      "status": "PASS",
+      "rows": 270,
+      "columns": [
+        "month",
+        "provider_code",
+        "within_18_rate",
+        "gap_to_92pp"
+      ]
+    },
+    {
+      "query": "10_sustained_deterioration.sql",
+      "status": "PASS",
+      "rows": 55,
+      "columns": [
+        "month",
+        "provider_code",
+        "waiting_count",
+        "total_all",
+        "unknown_start",
+        "within_18",
+        "over_52",
+        "over_65",
+        "over_78",
+        "over_104",
+        "within_18_rate",
+        "previous_rate",
+        "previous_month",
+        "deteriorated",
+        "deterioration_months",
+        "window_start",
+        "provider_name",
+        "priority_reason"
+      ]
+    },
+    {
+      "query": "11_ae_national_trend.sql",
+      "status": "PASS",
+      "rows": 25,
+      "columns": [
+        "month",
+        "attendances",
+        "over_4",
+        "within_4",
+        "within_4_rate",
+        "type1_attendances",
+        "type1_within_4_rate",
+        "emergency_admissions",
+        "dta_12_plus",
+        "providers",
+        "mom_pp",
+        "attendance_change"
+      ]
+    },
+    {
+      "query": "12_ae_regional.sql",
+      "status": "PASS",
+      "rows": 175,
+      "columns": [
+        "month",
+        "region_name",
+        "attendances",
+        "within_4_rate"
+      ]
+    },
+    {
+      "query": "13_ae_type1_comparison.sql",
+      "status": "PASS",
+      "rows": 25,
+      "columns": [
+        "month",
+        "within_4_rate",
+        "type1_within_4_rate",
+        "percentage_point_difference"
+      ]
+    },
+    {
+      "query": "14_ae_admissions.sql",
+      "status": "PASS",
+      "rows": 25,
+      "columns": [
+        "month",
+        "via_ae",
+        "other_emergency",
+        "total_emergency",
+        "dta_4_12",
+        "dta_12_plus"
+      ]
+    },
+    {
+      "query": "15_ae_provider_outliers.sql",
+      "status": "PASS",
+      "rows": 4,
+      "columns": [
+        "provider_code",
+        "attendances",
+        "rate",
+        "q1",
+        "q3"
+      ]
+    },
+    {
+      "query": "16_ae_daily_demand.sql",
+      "status": "PASS",
+      "rows": 25,
+      "columns": [
+        "month",
+        "attendances",
+        "attendances_per_calendar_day"
+      ]
+    },
+    {
+      "query": "17_ae_running_activity.sql",
+      "status": "PASS",
+      "rows": 25,
+      "columns": [
+        "month",
+        "financial_year",
+        "attendances",
+        "observed_fy_running_total"
+      ]
+    },
+    {
+      "query": "18_diagnostics_trend.sql",
+      "status": "PASS",
+      "rows": 24,
+      "columns": [
+        "month",
+        "waiting_count",
+        "over_6",
+        "over_13",
+        "total_activity",
+        "over_6_rate",
+        "providers",
+        "mom_pp",
+        "rolling_rate"
+      ]
+    },
+    {
+      "query": "19_diagnostic_tests.sql",
+      "status": "PASS",
+      "rows": 15,
+      "columns": [
+        "test_code",
+        "test_name",
+        "waiting",
+        "over_6",
+        "over_6_rate",
+        "activity"
+      ]
+    },
+    {
+      "query": "20_diagnostic_activity_mix.sql",
+      "status": "PASS",
+      "rows": 24,
+      "columns": [
+        "month",
+        "waiting_list_activity",
+        "planned_activity",
+        "unscheduled_activity",
+        "total_activity"
+      ]
+    },
+    {
+      "query": "21_diagnostic_provider_rank.sql",
+      "status": "PASS",
+      "rows": 157,
+      "columns": [
+        "month",
+        "provider_code",
+        "waiting_count",
+        "over_6",
+        "over_13",
+        "total_activity",
+        "over_6_rate",
+        "volume_rank",
+        "rate_rank"
+      ]
+    },
+    {
+      "query": "22_diagnostic_yoy.sql",
+      "status": "PASS",
+      "rows": 24,
+      "columns": [
+        "month",
+        "waiting_count",
+        "prior_year",
+        "annual_rate_change"
+      ]
+    },
+    {
+      "query": "23_provider_coverage.sql",
+      "status": "PASS",
+      "rows": 73,
+      "columns": [
+        "dataset",
+        "month",
+        "providers",
+        "coverage_change"
+      ]
+    },
+    {
+      "query": "24_provider_cross_domain.sql",
+      "status": "PASS",
+      "rows": 532,
+      "columns": [
+        "month",
+        "provider_code",
+        "rtt_pathways",
+        "ae_attendances",
+        "diagnostic_waits"
+      ]
+    },
+    {
+      "query": "25_latest_publications.sql",
+      "status": "PASS",
+      "rows": 3,
+      "columns": [
+        "dataset",
+        "latest_reporting_month",
+        "latest_verified_publication_date",
+        "unverified_publication_dates",
+        "retained_versions"
+      ]
+    },
+    {
+      "query": "26_provider_changes.sql",
+      "status": "PASS",
+      "rows": 11766,
+      "columns": [
+        "provider_code",
+        "month",
+        "within_18_rate",
+        "prior_rate",
+        "following_rate",
+        "change_pp"
+      ]
+    },
+    {
+      "query": "27_balanced_cohort.sql",
+      "status": "PASS",
+      "rows": 24,
+      "columns": [
+        "month",
+        "stable_code_waiting",
+        "within_18_rate",
+        "providers"
+      ]
+    },
+    {
+      "query": "28_specialty_percentiles.sql",
+      "status": "PASS",
+      "rows": 23,
+      "columns": [
+        "specialty_code",
+        "median_provider_rate",
+        "p90_provider_waiting",
+        "observations"
+      ]
+    },
+    {
+      "query": "29_revision_audit.sql",
+      "status": "PASS",
+      "rows": 73,
+      "columns": [
+        "dataset",
+        "month",
+        "retained_versions",
+        "last_retrieved",
+        "publisher_revised"
+      ]
+    },
+    {
+      "query": "30_monitoring.sql",
+      "status": "PASS",
+      "rows": 6,
+      "columns": [
+        "run_id",
+        "started_at",
+        "finished_at",
+        "status",
+        "elapsed_seconds",
+        "loaded_files",
+        "unchanged_files"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+table 'Specialty'
+	lineageTag: 8e180b58-7e97-5eed-8710-9431f6d38334
+
+	column 'specialty_code'
+		dataType: string
+		sourceColumn: specialty_code
+		summarizeBy: none
+
+	column 'specialty_name'
+		dataType: string
+		sourceColumn: specialty_name
+		summarizeBy: none
+
+	partition 'Specialty' = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents(DataRoot & "/Specialty.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				Typed = Table.TransformColumnTypes(Headers, {{"specialty_code", type text}, {"specialty_name", type text}}, "en-GB")
+			in
+				Typed

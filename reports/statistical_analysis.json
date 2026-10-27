@@ -1,0 +1,227 @@
+{
+  "national_descriptive": {
+    "rtt_waiting": {
+      "count": 24.0,
+      "mean": 7290314.625,
+      "std": 153728.1831273494,
+      "min": 7014835.0,
+      "25%": 7155382.25,
+      "50%": 7301606.0,
+      "75%": 7405514.25,
+      "max": 7571549.0
+    },
+    "within_18_rate": {
+      "count": 24.0,
+      "mean": 0.6168259151831454,
+      "std": 0.024387546810063953,
+      "min": 0.585072090268451,
+      "25%": 0.5959429036508793,
+      "50%": 0.6144063458878,
+      "75%": 0.6314565896087819,
+      "max": 0.6582582984239941
+    },
+    "over_52": {
+      "count": 24.0,
+      "mean": 164414.375,
+      "std": 46547.67349046566,
+      "min": 92607.0,
+      "25%": 118137.25,
+      "50%": 179387.5,
+      "75%": 194353.5,
+      "max": 249024.0
+    },
+    "attendances": {
+      "count": 25.0,
+      "mean": 2336915.6,
+      "std": 98370.06032791006,
+      "min": 2088071.0,
+      "25%": 2310222.0,
+      "50%": 2345934.0,
+      "75%": 2401266.0,
+      "max": 2487580.0
+    },
+    "within_4_rate": {
+      "count": 25.0,
+      "mean": 0.7453588922379771,
+      "std": 0.014525052495549438,
+      "min": 0.7112139557208345,
+      "25%": 0.7384184694035911,
+      "50%": 0.7478381193520909,
+      "75%": 0.7540238303686838,
+      "max": 0.7711148259734109
+    },
+    "emergency_admissions": {
+      "count": 25.0,
+      "mean": 537828.72,
+      "std": 17623.493653170284,
+      "min": 493015.0,
+      "25%": 530824.0,
+      "50%": 536158.0,
+      "75%": 551129.0,
+      "max": 567448.0
+    },
+    "dta_12_plus": {
+      "count": 25.0,
+      "mean": 48230.72,
+      "std": 7712.736147222117,
+      "min": 35467.0,
+      "25%": 44765.0,
+      "50%": 47623.0,
+      "75%": 50648.0,
+      "max": 71517.0
+    },
+    "diagnostic_waiting": {
+      "count": 24.0,
+      "mean": 1759796.7083333333,
+      "std": 114565.34530449126,
+      "min": 1568661.0,
+      "25%": 1681594.75,
+      "50%": 1744538.0,
+      "75%": 1842075.25,
+      "max": 1951404.0
+    },
+    "over_6": {
+      "count": 24.0,
+      "mean": 390177.4583333333,
+      "std": 49546.79861722228,
+      "min": 292432.0,
+      "25%": 361810.75,
+      "50%": 382695.5,
+      "75%": 436301.0,
+      "max": 485483.0
+    },
+    "over_6_rate": {
+      "count": 24.0,
+      "mean": 0.2212878615248367,
+      "std": 0.019484832304760155,
+      "min": 0.17460471942408243,
+      "25%": 0.21238726151565174,
+      "50%": 0.22223425143624825,
+      "75%": 0.2345731473250942,
+      "max": 0.2487865147350318
+    },
+    "total_activity": {
+      "count": 24.0,
+      "mean": 2513533.1666666665,
+      "std": 112517.29551019051,
+      "min": 2257697.0,
+      "25%": 2427720.5,
+      "50%": 2521622.0,
+      "75%": 2566547.25,
+      "max": 2733371.0
+    }
+  },
+  "provider_rate_distribution": {
+    "eligible_providers": 270,
+    "median": 0.6846197374591712,
+    "q1": 0.6352403089545503,
+    "q3": 0.778286163041837,
+    "min": 0.45001113337786686,
+    "max": 1.0
+  },
+  "monthly_change_correlation": {
+    "n": 23,
+    "pearson_r": -0.2135168314884764,
+    "block_bootstrap_95_interval": [
+      -0.5395680439025109,
+      0.15883956599988405
+    ],
+    "block_length": 3,
+    "replicates": 2000,
+    "interpretation": "Exploratory association of national monthly changes; interval describes temporal process variability, not patient sampling uncertainty. Differencing mitigates shared trends but does not establish causality."
+  },
+  "rtt_first_last_six_months": {
+    "mean_change_pathways": -364215.16666666605,
+    "relative_change": -0.04868677505075558,
+    "block_bootstrap_95_interval": [
+      -422612.5,
+      -306953.166666667
+    ],
+    "caveat": "Only six observations per window; block sensitivity and structural changes limit inference. Descriptive effect, not intervention impact."
+  },
+  "chronological_forecast_evaluation": {
+    "origins": 12,
+    "minimum_training_months": 12,
+    "persistence_mae": 48384.166666666664,
+    "seasonal_naive_mae": 257291.08333333334,
+    "persistence_bias": 12849.333333333334,
+    "horizon": "one reporting month",
+    "predictions": [
+      {
+        "index": 12,
+        "actual": 7296893.0,
+        "persistence": 7312356.0,
+        "seasonal_naive": 7571549.0
+      },
+      {
+        "index": 13,
+        "actual": 7304189.0,
+        "persistence": 7296893.0,
+        "seasonal_naive": 7541371.0
+      },
+      {
+        "index": 14,
+        "actual": 7159010.0,
+        "persistence": 7304189.0,
+        "seasonal_naive": 7479867.0
+      },
+      {
+        "index": 15,
+        "actual": 7199624.0,
+        "persistence": 7159010.0,
+        "seasonal_naive": 7463085.0
+      },
+      {
+        "index": 16,
+        "actual": 7155958.0,
+        "persistence": 7199624.0,
+        "seasonal_naive": 7427669.0
+      },
+      {
+        "index": 17,
+        "actual": 7124952.0,
+        "persistence": 7155958.0,
+        "seasonal_naive": 7401153.0
+      },
+      {
+        "index": 18,
+        "actual": 7014835.0,
+        "persistence": 7124952.0,
+        "seasonal_naive": 7418598.0
+      },
+      {
+        "index": 19,
+        "actual": 7093502.0,
+        "persistence": 7014835.0,
+        "seasonal_naive": 7389065.0
+      },
+      {
+        "index": 20,
+        "actual": 7153655.0,
+        "persistence": 7093502.0,
+        "seasonal_naive": 7355950.0
+      },
+      {
+        "index": 21,
+        "actual": 7147562.0,
+        "persistence": 7153655.0,
+        "seasonal_naive": 7367836.0
+      },
+      {
+        "index": 22,
+        "actual": 7131685.0,
+        "persistence": 7147562.0,
+        "seasonal_naive": 7299023.0
+      },
+      {
+        "index": 23,
+        "actual": 7158164.0,
+        "persistence": 7131685.0,
+        "seasonal_naive": 7312356.0
+      }
+    ]
+  },
+  "hypothesis_testing": "No confirmatory p-values: aggregate census-style reporting, serial dependence and changing provider coverage do not support an independent-observation test without stronger assumptions.",
+  "seasonality": "At most two annual cycles: month-of-year patterns are descriptive; no stable seasonal effect is claimed.",
+  "seed": 20261026
+}
