@@ -41,6 +41,8 @@ Audit recorded 2026-10-27T00:41:57.393829+00:00. Evaluate demonstrated behaviour
 
 ## Hiring-manager and architecture assessment
 
+The authorised repository was created as public at https://github.com/jatothnithinsai-tech/NHS_Healthcare_Operations_Intelligence. Initial content commit `ca202b01095847db77ca1a67dd4fad426b48b012` was verified against the remote, its README returned HTTP 200 and the required public artifact paths were verified. See `reports/validation/github_publication.json`. The committed PBIR source deliberately uses public schema versions successfully opened by installed Desktop; see `POWER_BI_VALIDATION.md` for the newer Desktop Save format's unavailable schema endpoint.
+
 Business relevance: strong, because the questions, denominators and proposed actions map to operational planning. SQL and Python: demonstrated through executable source-specific transformations, advanced queries, failure handling and reconciliations. Modelling: population separation and date/provider keys prevent fan-out; geographic restraint avoids false precision. Statistical reasoning: defensible baselines and uncertainty caveats support explainable findings. Excel: assess native calculation and PivotTable evidence rather than screenshots alone. Power BI: assess desktop and DAX evidence separately from the existence of project files. Documentation: reproducible source lineage, setup and honest limits support technical discussion.
 
 **Portfolio readiness verdict:** Ready for an evidence-based analytics portfolio discussion, with the documented aggregate-data and historical-date limits.

@@ -1,7 +1,7 @@
 {
   "status": "PASS",
-  "candidate_files": 275,
-  "candidate_bytes": 52037533,
+  "candidate_files": 276,
+  "candidate_bytes": 52040368,
   "findings": [],
   "scope": "Git candidates; token/private-key patterns, ignored artifact leakage, patient identifier columns, workbook XML, file sizes",
   "data_classification": "Published NHS provider/commissioner/specialty/test aggregates only; no patient records",

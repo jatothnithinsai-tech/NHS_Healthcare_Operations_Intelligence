@@ -1,0 +1,21 @@
+{
+  "url": "https://github.com/jatothnithinsai-tech/NHS_Healthcare_Operations_Intelligence",
+  "local_commit": "ca202b01095847db77ca1a67dd4fad426b48b012",
+  "remote_commit": "ca202b01095847db77ca1a67dd4fad426b48b012",
+  "sha_match": true,
+  "public": true,
+  "readme_http_status": 200,
+  "required_public_artifacts": {
+    "README.md": true,
+    "docs/architecture/ARCHITECTURE.md": true,
+    "docs/testing/FINAL_INDUSTRY_AUDIT.md": true,
+    "excel/NHS_Healthcare_Executive_Analysis.xlsx": true,
+    "powerbi/NHS_Healthcare_Operations_Intelligence.pbip": true,
+    "screenshots/01_executive.png": true,
+    "screenshots/02_rtt.png": true,
+    "screenshots/03_ae_diagnostics.png": true,
+    "screenshots/04_monitoring.png": true
+  },
+  "source_code_present": true,
+  "sql_analyses_present": 30
+}
