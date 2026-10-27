@@ -4,7 +4,19 @@
 
 Published aggregate data become validated waiting-list, urgent-care and diagnostic intelligence for an operational planning team. Separate care populations, weighted denominators, immutable source provenance and executable evidence underpin every finding. This is an independent portfolio project; NHS England does not endorse it.
 
-![Calculated national operational trends](reports/figures/national_trends.png)
+![Actual Power BI Desktop capture of the executive healthcare performance page](screenshots/01_executive.png)
+
+*Genuine project-window capture. The report shows separately dated RTT, A&E and diagnostics populations; the displayed values are a recorded snapshot.*
+
+**Review in three minutes:** [business findings](reports/NHS_Healthcare_Executive_Decision_Report.md) · [30 SQL analyses](sql/analytics/) · [Excel workbook](excel/NHS_Healthcare_Executive_Analysis.xlsx) · [Power BI project](powerbi/NHS_Healthcare_Operations_Intelligence.pbip) · [validation evidence](docs/testing/FINAL_INDUSTRY_AUDIT.md)
+
+| Business value | Technical evidence |
+|---|---|
+| Investigate long waits, provider variation and deteriorating performance | 73 official source files; three fact tables; 403,839 fact rows |
+| Explain what a KPI means before recommending action | 33 documented KPI definitions; 30 executed SQL analyses |
+| Support a repeatable operational review | Python pipeline; PostgreSQL; native Excel; four Power BI pages; 47 recorded passing tests |
+
+The tests and metrics below describe committed validation evidence; they are not a claim that a fresh desktop refresh has run on this visit.
 
 ## Verified analytical position
 
@@ -61,12 +73,16 @@ The [warehouse diagram and decisions](docs/architecture/ARCHITECTURE.md) explain
 3. A&E and Diagnostics Intelligence — attendances, admissions and diagnostic tests.
 4. Data Quality & Operational Monitoring — source dates, checksum lineage and actual run history.
 
-Power BI screenshots, when present in [screenshots](screenshots/), capture the actual project window. The analytical chart above is a generated figure and is not labelled as a Power BI screenshot. No `.pbix` file is fabricated. See the final audit for UI checks and limitations.
+The executive capture is shown above. These additional images capture the actual Power BI project window. The [calculated national-trend figure](reports/figures/national_trends.png) is a separate analytical export. Open the committed PBIP for the editable report; no PBIX is supplied. See the final audit for UI checks and limitations.
 
-![Executive Power BI page](screenshots/01_executive.png)
+<details>
+<summary>View the RTT, A&E/diagnostics and monitoring pages</summary>
+
 ![RTT Power BI page](screenshots/02_rtt.png)
 ![A&E and diagnostics Power BI page](screenshots/03_ae_diagnostics.png)
 ![Data quality and monitoring Power BI page](screenshots/04_monitoring.png)
+
+</details>
 
 ## Sources and attribution
 
