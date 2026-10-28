@@ -1,0 +1,322 @@
+{
+  "status": "PASS",
+  "schema_files": 59,
+  "analytical_files_identical": 22,
+  "schema_compatibility_fallbacks": [],
+  "errors": [],
+  "dax": {
+    "status": "PASS",
+    "connection": "Actual local Power BI Desktop engine; endpoint retained only in ignored local state",
+    "catalog": "b6828857-082f-4bf2-88c8-68d7bf020d2b",
+    "checks": [
+      {
+        "check": "RTT waiting",
+        "dax": "7158164",
+        "sql": 7158164.0,
+        "absolute_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "check": "RTT within18 rate",
+        "dax": 0.6520602210287443,
+        "sql": 0.6520602210287443,
+        "absolute_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "check": "RTT over52",
+        "dax": "109936",
+        "sql": 109936.0,
+        "absolute_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "check": "A&E attendances",
+        "dax": "2444743",
+        "sql": 2444743.0,
+        "absolute_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "check": "A&E four-hour rate",
+        "dax": 0.7436331753480836,
+        "sql": 0.7436331753480836,
+        "absolute_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "check": "Diagnostic waiting",
+        "dax": "1833070",
+        "sql": 1833070.0,
+        "absolute_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "check": "Diagnostic six-week rate",
+        "dax": 0.2467478055938944,
+        "sql": 0.2467478055938944,
+        "absolute_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "check": "Diagnostic activity",
+        "dax": "2516963",
+        "sql": 2516963.0,
+        "absolute_error": 0.0,
+        "status": "PASS"
+      },
+      {
+        "check": "Provider/date dimension filter context",
+        "provider_code": "RAJ",
+        "month": "2026-08-01",
+        "dax": "165234",
+        "sql": 165234,
+        "status": "PASS"
+      },
+      {
+        "check": "All monthly domain totals",
+        "matched_months": 25,
+        "expected_months": 25,
+        "status": "PASS"
+      }
+    ],
+    "visible_measures": 51,
+    "monthly_dax": [
+      {
+        "Date[month]": "2024-09-01 00:00:00+00:00",
+        "[RTTWaiting]": "7571549",
+        "[AEAttendances]": "2214217",
+        "[DiagnosticWaiting]": "1592553"
+      },
+      {
+        "Date[month]": "2024-10-01 00:00:00+00:00",
+        "[RTTWaiting]": "7541371",
+        "[AEAttendances]": "2360536",
+        "[DiagnosticWaiting]": "1636424"
+      },
+      {
+        "Date[month]": "2024-11-01 00:00:00+00:00",
+        "[RTTWaiting]": "7479867",
+        "[AEAttendances]": "2314998",
+        "[DiagnosticWaiting]": "1620824"
+      },
+      {
+        "Date[month]": "2024-12-01 00:00:00+00:00",
+        "[RTTWaiting]": "7463085",
+        "[AEAttendances]": "2345934",
+        "[DiagnosticWaiting]": "1568661"
+      },
+      {
+        "Date[month]": "2025-01-01 00:00:00+00:00",
+        "[RTTWaiting]": "7427669",
+        "[AEAttendances]": "2218130",
+        "[DiagnosticWaiting]": "1627995"
+      },
+      {
+        "Date[month]": "2025-02-01 00:00:00+00:00",
+        "[RTTWaiting]": "7401153",
+        "[AEAttendances]": "2088071",
+        "[DiagnosticWaiting]": "1674823"
+      },
+      {
+        "Date[month]": "2025-03-01 00:00:00+00:00",
+        "[RTTWaiting]": "7418598",
+        "[AEAttendances]": "2389064",
+        "[DiagnosticWaiting]": "1709380"
+      },
+      {
+        "Date[month]": "2025-04-01 00:00:00+00:00",
+        "[RTTWaiting]": "7389065",
+        "[AEAttendances]": "2297421",
+        "[DiagnosticWaiting]": "1703100"
+      },
+      {
+        "Date[month]": "2025-05-01 00:00:00+00:00",
+        "[RTTWaiting]": "7355950",
+        "[AEAttendances]": "2397529",
+        "[DiagnosticWaiting]": "1715934"
+      },
+      {
+        "Date[month]": "2025-06-01 00:00:00+00:00",
+        "[RTTWaiting]": "7367836",
+        "[AEAttendances]": "2351581",
+        "[DiagnosticWaiting]": "1739272"
+      },
+      {
+        "Date[month]": "2025-07-01 00:00:00+00:00",
+        "[RTTWaiting]": "7299023",
+        "[AEAttendances]": "2408866",
+        "[DiagnosticWaiting]": "1753665"
+      },
+      {
+        "Date[month]": "2025-08-01 00:00:00+00:00",
+        "[RTTWaiting]": "7312356",
+        "[AEAttendances]": "2266937",
+        "[DiagnosticWaiting]": "1683852"
+      },
+      {
+        "Date[month]": "2025-09-01 00:00:00+00:00",
+        "[RTTWaiting]": "7296893",
+        "[AEAttendances]": "2310222",
+        "[DiagnosticWaiting]": "1736880"
+      },
+      {
+        "Date[month]": "2025-10-01 00:00:00+00:00",
+        "[RTTWaiting]": "7304189",
+        "[AEAttendances]": "2401266",
+        "[DiagnosticWaiting]": "1794463"
+      },
+      {
+        "Date[month]": "2025-11-01 00:00:00+00:00",
+        "[RTTWaiting]": "7159010",
+        "[AEAttendances]": "2347046",
+        "[DiagnosticWaiting]": "1768507"
+      },
+      {
+        "Date[month]": "2025-12-01 00:00:00+00:00",
+        "[RTTWaiting]": "7199624",
+        "[AEAttendances]": "2326139",
+        "[DiagnosticWaiting]": "1749804"
+      },
+      {
+        "Date[month]": "2026-01-01 00:00:00+00:00",
+        "[RTTWaiting]": "7155958",
+        "[AEAttendances]": "2319296",
+        "[DiagnosticWaiting]": "1819211"
+      },
+      {
+        "Date[month]": "2026-02-01 00:00:00+00:00",
+        "[RTTWaiting]": "7124952",
+        "[AEAttendances]": "2117450",
+        "[DiagnosticWaiting]": "1869091"
+      },
+      {
+        "Date[month]": "2026-03-01 00:00:00+00:00",
+        "[RTTWaiting]": "7014835",
+        "[AEAttendances]": "2432272",
+        "[DiagnosticWaiting]": "1924199"
+      },
+      {
+        "Date[month]": "2026-04-01 00:00:00+00:00",
+        "[RTTWaiting]": "7093502",
+        "[AEAttendances]": "2345329",
+        "[DiagnosticWaiting]": "1951404"
+      },
+      {
+        "Date[month]": "2026-05-01 00:00:00+00:00",
+        "[RTTWaiting]": "7153655",
+        "[AEAttendances]": "2457398",
+        "[DiagnosticWaiting]": "1910025"
+      },
+      {
+        "Date[month]": "2026-06-01 00:00:00+00:00",
+        "[RTTWaiting]": "7147562",
+        "[AEAttendances]": "2437906",
+        "[DiagnosticWaiting]": "1930725"
+      },
+      {
+        "Date[month]": "2026-07-01 00:00:00+00:00",
+        "[RTTWaiting]": "7131685",
+        "[AEAttendances]": "2487580",
+        "[DiagnosticWaiting]": "1921259"
+      },
+      {
+        "Date[month]": "2026-08-01 00:00:00+00:00",
+        "[RTTWaiting]": "7158164",
+        "[AEAttendances]": "2342959",
+        "[DiagnosticWaiting]": "1833070"
+      },
+      {
+        "Date[month]": "2026-09-01 00:00:00+00:00",
+        "[RTTWaiting]": null,
+        "[AEAttendances]": "2444743",
+        "[DiagnosticWaiting]": null
+      }
+    ]
+  },
+  "desktop_pages": [
+    {
+      "visual_labels": [
+        "Incomplete RTT pathways 7,158,164.",
+        "RTT within 18 weeks 65.2%.",
+        "A&E within four hours 74.4%.",
+        "Diagnostics six weeks or more 24.7%.",
+        "Desktop layout",
+        "Mobile layout",
+        "Many to one relationship from AE to Provider",
+        "Many to one relationship from AE to Region",
+        "Many to one relationship from Diagnostics to Provider",
+        "Many to one relationship from RTT to Provider"
+      ],
+      "screenshot": "01_executive_healthcare-canvas.png",
+      "errors": [],
+      "page": "Executive Healthcare Performance"
+    },
+    {
+      "visual_labels": [
+        "Incomplete pathways 7,158,164.",
+        "Over 52 weeks 109,936.",
+        "Monthly list change 26,479.",
+        "RTT reporting month Aug 2026.",
+        "Over52",
+        "Over78",
+        "Over104",
+        "Desktop layout",
+        "Mobile layout",
+        "Many to one relationship from AE to Provider",
+        "Many to one relationship from AE to Region",
+        "Many to one relationship from Diagnostics to Provider",
+        "Many to one relationship from RTT to Provider"
+      ],
+      "screenshot": "02_rtt_performance-canvas.png",
+      "errors": [],
+      "page": "RTT Waiting List Intelligence"
+    },
+    {
+      "visual_labels": [
+        "A&E attendances 2,444,743.",
+        "12+ hours after decision to admit 50,582.",
+        "Diagnostic waits 1,833,070.",
+        "Diagnostic activity 2,516,963.",
+        "Attendances",
+        "Emergency admissions",
+        "Desktop layout",
+        "Mobile layout",
+        "Many to one relationship from AE to Provider",
+        "Many to one relationship from AE to Region",
+        "Many to one relationship from Diagnostics to Provider",
+        "Many to one relationship from RTT to Provider"
+      ],
+      "screenshot": "03_ae_diagnostics-canvas.png",
+      "errors": [],
+      "page": "A&E and Diagnostics Intelligence"
+    },
+    {
+      "visual_labels": [
+        "Retained source versions 73.",
+        "Publication dates awaiting verification 24.",
+        "Latest pipeline status success.",
+        "Latest source retrieval 26 Oct 2026 23:09.",
+        "Days since retrieval 2.",
+        "Missing data domains 0.",
+        "Publisher-labelled revised files 48.",
+        "Warehouse validation status PASS.",
+        "Desktop layout",
+        "Mobile layout",
+        "Many to one relationship from AE to Provider",
+        "Many to one relationship from AE to Region",
+        "Many to one relationship from Diagnostics to Provider",
+        "Many to one relationship from RTT to Provider"
+      ],
+      "screenshot": "04_data_quality-canvas.png",
+      "errors": [],
+      "page": "Data Quality & Operational Monitoring"
+    }
+  ],
+  "semantic_model": "All model source files, relationships, data connections and measures are byte-identical to the baseline",
+  "interactions": "Existing filter, tooltip and drillthrough definitions preserved. Page switching verified; complete slicer/drillthrough/tooltip usability not exercised.",
+  "capture_method": "Native Power BI Desktop PrintWindow; lossless crop of report canvas; no chart reconstruction or value edits",
+  "capture_date": "2026-10-28",
+  "presentation_sorting": "Specialty/provider long-wait comparisons and diagnostic waits sorted descending by the displayed measure; source dates and pipeline history show recent records first. Data projections and calculations are unchanged.",
+  "desktop_serialization_note": "Desktop can rewrite project serialization while saving its working copy. Final publication assets are materialized from the preserved baseline and the presentation script; source preservation is checked on those final assets. Captures show the actual rendered presentation and imported values."
+}

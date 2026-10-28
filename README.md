@@ -4,7 +4,9 @@
 
 Published aggregate data become validated waiting-list, urgent-care and diagnostic intelligence for an operational planning team. Separate care populations, weighted denominators, immutable source provenance and executable evidence underpin every finding. This is an independent portfolio project; NHS England does not endorse it.
 
-![Actual Power BI Desktop capture of the executive healthcare performance page](screenshots/01_executive.png)
+## Dashboard Preview
+
+![Actual Power BI Desktop capture of the executive healthcare performance page](screenshots/01_executive_healthcare.png)
 
 *Genuine project-window capture. The report shows separately dated RTT, A&E and diagnostics populations; the displayed values are a recorded snapshot.*
 
@@ -18,7 +20,7 @@ Published aggregate data become validated waiting-list, urgent-care and diagnost
 
 The tests and metrics below describe committed validation evidence; they are not a claim that a fresh desktop refresh has run on this visit.
 
-## Verified analytical position
+## Key Findings
 
 - **RTT — 2026-08:** 7,158,164 submitted incomplete pathways; 65.2% within 18 weeks; 109,936 over 52 weeks.
 - **A&E — 2026-09:** 2,444,743 attendances; 74.4% completed within four hours; 50,582 decision-to-admit waits of 12+ hours.
@@ -34,13 +36,13 @@ These counts are different populations and must never be added into a unique-pat
 
 73 authentic source files, 7,918,106 raw rows including controls and 403,839 analytical fact rows. Raw sources are retained locally; the public manifest records exact official URLs, reporting periods, checksums, retrieval timestamps and revision labels.
 
-## Business questions and findings
+## Business Problem
 
 Which specialties and providers account for long waits? Which providers show consecutive deterioration? How do Type 1 and all-department A&E measures differ? Which diagnostic tests concentrate six-week waits? What changes remain in a stable-code provider cohort? Are sources complete, revised and current enough for the next performance review?
 
 The [BRD](docs/requirements/BUSINESS_REQUIREMENTS.md) defines 24 questions. The [33-KPI dictionary](docs/kpi_definitions/KPI_DICTIONARY.md) specifies meaning, numerator, denominator, calculation, scope, caveats and validation. The [executive decision report](reports/NHS_Healthcare_Executive_Decision_Report.md) provides actual calculated findings, named investigation roles and monitoring KPIs. The [stakeholder briefing](reports/Stakeholder_Briefing.md) is ready to adapt into a management presentation. Recommendations are proposed investigations, not claimed savings or delivered improvements.
 
-## Architecture and lineage
+## Project Architecture
 
 ```mermaid
 flowchart LR
@@ -56,7 +58,7 @@ flowchart LR
 
 The [warehouse diagram and decisions](docs/architecture/ARCHITECTURE.md) explain fact grains, source ICB versus reporting-region geography, single-direction relationships and revision handling. The [data dictionary](docs/data_dictionary/DATA_DICTIONARY.md) explains the physical tables and source conventions. Providers keep their official codes; a trust, site, commissioner and ICB are never assumed to be the same entity.
 
-## Working implementation and evidence
+## Tools & Technologies
 
 - **Python:** modular ingestion, Pandas/NumPy transformations, explicit missing values, retries/timeouts, structured logging, immutable files, parser-version caches, transactional changed-month loads and audit records.
 - **PostgreSQL:** four schemas, staging, three constrained facts, six dimensions, analytical views, indexes, safe aggregate joins and row-count reconciliation.
@@ -75,14 +77,10 @@ The [warehouse diagram and decisions](docs/architecture/ARCHITECTURE.md) explain
 
 The executive capture is shown above. These additional images capture the actual Power BI project window. The [calculated national-trend figure](reports/figures/national_trends.png) is a separate analytical export. Open the committed PBIP for the editable report; no PBIX is supplied. See the final audit for UI checks and limitations.
 
-<details>
-<summary>View the RTT, A&E/diagnostics and monitoring pages</summary>
-
-![RTT Power BI page](screenshots/02_rtt.png)
+![RTT Power BI page](screenshots/02_rtt_performance.png)
 ![A&E and diagnostics Power BI page](screenshots/03_ae_diagnostics.png)
-![Data quality and monitoring Power BI page](screenshots/04_monitoring.png)
+![Data quality and monitoring Power BI page](screenshots/04_data_quality.png)
 
-</details>
 
 ## Sources and attribution
 
@@ -90,7 +88,7 @@ The executive capture is shown above. These additional images capture the actual
 
 Contains public sector information licensed under the Open Government Licence v3.0. [Attribution and terms](docs/DATA_ATTRIBUTION.md) · [source manifest](data/reference/source_manifest.json) · [profiling report](docs/testing/DATA_PROFILING_REPORT.md).
 
-## Run locally
+## How to Reproduce
 
 Use Python 3.11+ and a dedicated PostgreSQL database. Native workbook generation requires Windows with installed Excel; Power BI UI checks require Power BI Desktop. Core processing and CI run without those desktop applications.
 
@@ -107,10 +105,24 @@ $env:NHS_INTEGRATION = '1'
 
 For a single complete Windows refresh, run `powershell -File scripts/refresh.ps1` after prerequisites. The isolated local cluster uses loopback port 55473 and ignored `.env` credentials; it does not modify another project's database. A custom database URL can be configured using `.env.example`. To reproduce exports without network, omit `--refresh` after raw files have been retained. Set the Power BI **DataRoot** parameter to your local `powerbi/data` directory, then refresh the model.
 
-## Updates and operational limits
+## Limitations
 
 The Windows weekly publication check is **registered**. It checks official monthly releases and revisions; a run can legitimately find no change. Task Scheduler requires the signed-in user for Excel. Database loading, exported data, Excel calculation and Power BI model refresh are separate steps. No cloud service or live patient feed is claimed. See the [operations runbook](docs/runbooks/OPERATIONS.md).
 
 Historical publication dates remain explicitly unverified for 24 files; upload directories are never substituted for exact release dates. Provider entries/exits and service transfers limit comparisons. Current official reference mappings are not backdated onto historical data. Two annual cycles limit seasonality inference. Aggregate operational performance does not establish clinical quality.
 
 [Final evidence-based industry audit](docs/testing/FINAL_INDUSTRY_AUDIT.md) · [persistent project status](docs/PROJECT_STATUS.md) · [interview preparation and verified CV bullets](docs/business_findings/INTERVIEW_AND_CV.md).
+
+## Key Analysis
+
+The report keeps RTT pathways, A&E attendances and diagnostic waits as separate populations. Weighted rates, domain-specific latest months, nested long-wait thresholds and provider drillthrough context retain their existing definitions. Thirty SQL analyses and the KPI dictionary above provide the calculation trail.
+
+## Business Recommendations
+
+Use the linked executive decision report to prioritise specialty and provider investigations. Validate provider coverage and publication dates before operational comparison; aggregate performance is not a clinical-quality assessment.
+
+## Testing & Validation
+
+The redesign audit executed **33 unit/configuration tests and 14 authentic-data integration tests: 47 passed, zero failures**. [Presentation and Desktop evidence](docs/design/redesign_validation.json) records schema/layout checks, model preservation, page switching and DAX/SQL reconciliation. The new images are lossless canvas crops of the actual modified Power BI Desktop report. Slicer, tooltip and drillthrough definitions are preserved; complete interaction usability is not claimed.
+
+To reapply the visual standard after generating the report, run `python scripts/redesign_report.py`. [Page purposes and design decisions](docs/design/REDESIGN_NOTES.md). Independent portfolio work; no official NHS endorsement is implied.

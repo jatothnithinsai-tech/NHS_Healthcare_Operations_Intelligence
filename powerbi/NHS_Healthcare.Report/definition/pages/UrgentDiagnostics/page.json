@@ -3,8 +3,8 @@
   "name": "UrgentDiagnostics",
   "displayName": "A&E and Diagnostics Intelligence",
   "displayOption": "FitToPage",
-  "height": 840,
-  "width": 1280,
+  "height": 900,
+  "width": 1600,
   "objects": {
     "background": [
       {
@@ -14,7 +14,7 @@
               "color": {
                 "expr": {
                   "Literal": {
-                    "Value": "'#F3F6F8'"
+                    "Value": "'#F6F8FC'"
                   }
                 }
               }

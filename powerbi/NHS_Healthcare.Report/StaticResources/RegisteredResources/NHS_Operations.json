@@ -1,24 +1,30 @@
 {
   "name": "NHS_Operations",
   "dataColors": [
-    "#007F86",
-    "#123047",
-    "#5B8BA3",
-    "#78BDB4",
-    "#B5C7D3",
-    "#C88448"
+    "#2563A6",
+    "#087F75",
+    "#C9513E",
+    "#7664BF",
+    "#C48B25"
   ],
-  "background": "#F3F6F8",
-  "foreground": "#123047",
-  "tableAccent": "#007F86",
+  "background": "#F6F8FC",
+  "foreground": "#263445",
+  "tableAccent": "#2563A6",
+  "good": "#087F75",
+  "neutral": "#C48B25",
+  "bad": "#C9513E",
   "textClasses": {
     "title": {
       "fontFace": "Segoe UI Semibold",
-      "color": "#123047"
+      "color": "#263445"
     },
     "label": {
       "fontFace": "Segoe UI",
-      "color": "#526575"
+      "color": "#56687A"
+    },
+    "callout": {
+      "fontFace": "Segoe UI Semibold",
+      "color": "#263445"
     }
   }
 }
